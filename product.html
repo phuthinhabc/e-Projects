@@ -19,8 +19,42 @@
 
     <title>Product</title>
   </head>
-  <body>
-    <h1>This is product page</h1>
+  <body class="container" ng-app="myApp" ng-controller="myAppController">
+    
+    <div>
+      <input type="text" ng-model="demoFilter.name">
+    </div>
+    <div id="listproduct" class="row">
+      <div class="col-md-3 py-2" ng-repeat="product in products | filter:demoFilter">
+        <ul class="text-center py-2">
+          <li>{{product.name}}</li>
+          <li>{{product.year}}</li>
+          <li>{{product.company}}</li>
+          <li>{{product.price}}</li>
+          <li>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal{{product.id}}">
+                Click for more
+              </button>     
+              <div class="modal fade" id="exampleModal{{product.id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">{{product.name}}</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      {{ product.id }}
+                    </div>
+                  </div>
+                </div>
+              </div>       
+          </li>
+          
+        </ul>
+      </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
