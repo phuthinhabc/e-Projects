@@ -21,38 +21,11 @@
   </head>
   <body class="container" ng-app="myApp" ng-controller="myAppController">
     
-    <div>
-      <input type="text" ng-model="demoFilter.name">
-    </div>
-    <div id="listproduct" class="row">
-      <div class="col-md-3 py-2" ng-repeat="product in products | filter:demoFilter">
-        <ul class="text-center py-2">
-          <li>{{product.name}}</li>
-          <li>{{product.year}}</li>
-          <li>{{product.company}}</li>
-          <li>{{product.price}}</li>
-          <li>
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal{{product.id}}">
-                Click for more
-              </button>     
-              <div class="modal fade" id="exampleModal{{product.id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">{{product.name}}</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      {{ product.id }}
-                    </div>
-                  </div>
-                </div>
-              </div>       
-          </li>
-          
-        </ul>
+    <div class="container row">
+      <div class="col-md-3 mx-2 py-2 bg-light text-center" ng-repeat="item in data">
+        <h3>{{item.name}}</h3>
+        <p>Model: {{item.model}}</p>
+        <img class="img-fluid img-responsive" src="{{item.imageUrl}}" alt="Dining table">
       </div>
     </div>
 
