@@ -8,26 +8,138 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <!-- My Index CSS -->
+    <!-- My Product CSS -->
     <link rel="stylesheet" href="CSS/product_style.css">
 
     <!-- Angular JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"></script>
+    <script src="//code.angularjs.org/1.7.3/angular.min.js"></script>
+    <script src="//code.angularjs.org/1.7.3/angular-animate.js"></script>
+    <script src="./node_modules/ngstorage/ngStorage.min.js"></script>
 
     <!-- My JavaScript -->
     <script src="JS/product_js.js"></script>
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
     <title>Product</title>
+    
   </head>
   <body class="container" ng-app="myApp" ng-controller="myAppController">
-    
-    <div class="container row">
-      <div class="col-md-3 mx-2 py-2 bg-light text-center" ng-repeat="item in data">
-        <h3>{{item.name}}</h3>
-        <p>Model: {{item.model}}</p>
-        <img class="img-fluid img-responsive" src="{{item.imageUrl}}" alt="Dining table">
+    <div class="row">
+      <div class="col-md-2 bg-light">
+        <ul>
+          <li>
+            <span>Sort by manufacture</span>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-10 row">
+        <div class='col-md-12 text-right my-2'>
+          <button type="button" class="btn btn-primary mt-2 mr-2" data-toggle="modal" data-target="#compareModal" ng-disabled='disableCompareButton'>
+            Click for show compare
+            <i class="fas fa-arrow-right"></i>
+            <span id='my-counter-compare' class="position-absolute">{{compareDatalength}}</span>
+          </button>
+          <div class="modal fade" id="compareModal" role="dialog" aria-labelledby="compareModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="compareModalLabel">Compare zone</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <table class="table">
+                    <tbody>
+                      <tr>
+                        <td>Name</td>
+                        <td ng-repeat='item in compareData'>{{item.name}}</td>
+                      </tr>
+                      <tr>
+                        <td>Image</td>
+                        <td ng-repeat='item in compareData'><img src="{{item.imageUrl}}" class="rounded img-thumbnail" alt="Product picture"></td>
+                      </tr>
+                      <tr>
+                        <td>Category</td>
+                        <td ng-repeat='item in compareData'>{{item.category}}</td>
+                      </tr>
+                      <tr>
+                        <td>Manufacture</td>
+                        <td ng-repeat='item in compareData'>{{item.manufacture}}</td>
+                      </tr>
+                      <tr>
+                        <td>Model</td>
+                        <td ng-repeat='item in compareData'>{{item.model}}</td>
+                      </tr>
+                      <tr>
+                        <td>Size</td>
+                        <td ng-repeat='item in compareData'>{{item.size}}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-right m-2 pr-4 col-md-12 ">
+          <button type="button" class="btn btn-danger" ng-click='compareDataReset()'>
+              Click for reset compare items
+          </button>
+        </div>
+        <div class="my-fixed-height col-md-4 text-center" ng-repeat="item in data">
+          <div
+            class="position-absolute bg-light"
+            ng-init = "hovering = true"
+            ng-class=
+              "{
+                'my-product': hovering,
+                'my-product-hover': !hovering
+              }"
+            ng-mouseenter="hovering = false"
+            ng-mouseleave="hovering = true"
+          >
+              <h3>{{item.name}}</h3>
+              <img class="col text-center rounded mx-auto" src="{{item.imageUrl}}" alt="Dining table">
+              <p>Category: {{item.category}}</p>
+              <p>Model: {{item.model}}</p>
+              <p>Size: {{item.size}}</p>
+              <p>Manufacture: {{item.manufacture}}</p>
+          </div>
+          <div 
+            class="position-absolute my-fixed-height-overlay"
+            ng-init = "hovering = true"
+            ng-class=
+              "{
+                'my-overlay': hovering,
+                'my-overlay-hover': !hovering
+              }"
+            ng-mouseenter="hovering = false"
+            ng-mouseleave="hovering = true"
+          >
+              <p class="text-left mx-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore amet dolore molestias eligendi sed. Unde rerum autem, praesentium pariatur eum tenetur, sed totam quisquam illo modi ad facere, blanditiis hic.</p>
+              <p class="text-left mx-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore amet dolore molestias eligendi sed. Unde rerum autem, praesentium pariatur eum tenetur, sed totam quisquam illo modi ad facere, blanditiis hic.</p>
+              <p class="text-left mx-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore amet dolore molestias eligendi sed. Unde rerum autem, praesentium pariatur eum tenetur, sed totam quisquam illo modi ad facere, blanditiis hic.</p>
+              <button ng-click='clickForCompare(item.id)' class="btn btn-success my-2">
+                <i class="fas fa-plus"></i>
+                <span>Click for compare</span>
+              </button>
+              <br>
+              <button class="btn btn-success my-2">
+                <i class="fas fa-file-download"></i>
+                <span>Download</span>
+              </button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <button ng-click='clickForTest()'>Click for bind!</button>
+        <button ng-click='clickForReset()'>Click for reset!</button>
       </div>
     </div>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
