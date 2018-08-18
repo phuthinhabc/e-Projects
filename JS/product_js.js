@@ -23,7 +23,7 @@ myApp.controller('myAppController',function($scope, $localStorage){
         {
             id: 1,
             name: 'The beautiful table',
-            imageUrl: './images/products/dining.jpg',
+            imageUrl: '../images/products/dining.jpg',
             category: 'table',
             manufacture: 'DURIAN',
             model: '2017',
@@ -32,7 +32,7 @@ myApp.controller('myAppController',function($scope, $localStorage){
         {
             id: 2,
             name: 'Desk 1',
-            imageUrl: './images/products/dining.jpg',
+            imageUrl: '../images/products/luxury_table.jpg',
             category: 'table',
             manufacture: 'DURIAN',
             model: '2018',
@@ -41,7 +41,7 @@ myApp.controller('myAppController',function($scope, $localStorage){
         {
             id: 3,
             name: 'Desk and desk',
-            imageUrl: './images/products/dining.jpg',
+            imageUrl: '../images/products/dining.jpg',
             category: 'table',
             manufacture: 'DURIAN',
             model: '2018',
@@ -50,7 +50,7 @@ myApp.controller('myAppController',function($scope, $localStorage){
         {
             id: 4,
             name: 'The No-cheap Desk',
-            imageUrl: './images/products/dining.jpg',
+            imageUrl: '../images/products/dining.jpg',
             category: 'table',
             manufacture: 'DURIAN',
             model: '2018',
@@ -59,7 +59,7 @@ myApp.controller('myAppController',function($scope, $localStorage){
         {
             id: 5,
             name: 'A Desk?',
-            imageUrl: './images/products/dining.jpg',
+            imageUrl: '../images/products/dining.jpg',
             category: 'table',
             manufacture: 'DURIAN',
             model: '2018',
@@ -68,7 +68,7 @@ myApp.controller('myAppController',function($scope, $localStorage){
         {
             id: 6,
             name: 'This is a Desk',
-            imageUrl: './images/products/dining.jpg',
+            imageUrl: '../images/products/dining.jpg',
             category: 'table',
             manufacture: 'DURIAN',
             model: '2018',
