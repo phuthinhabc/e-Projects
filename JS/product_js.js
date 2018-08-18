@@ -22,44 +22,44 @@ myApp.controller('myAppController',function($scope, $localStorage){
     $scope.data=[
         {
             id: 1,
-            name: 'The beautiful table',
-            imageUrl: '../images/products/dining.jpg',
+            name: 'Table table',
+            imageUrl: '../images/products/Hoa_Phat-Table-Table_table.jpg',
             category: 'table',
-            manufacture: 'DURIAN',
+            manufacture: 'HOA PHAT',
             model: '2017',
             size: '28x25'
         },
         {
             id: 2,
-            name: 'Desk 1',
-            imageUrl: '../images/products/luxury_table.jpg',
-            category: 'table',
-            manufacture: 'DURIAN',
+            name: 'The shelf',
+            imageUrl: '../images/products/Danish_store-Shelf-The_shelf.jpg',
+            category: 'shelf',
+            manufacture: 'THE DANISH STORE',
             model: '2018',
             size: '28x25'
         },
         {
             id: 3,
-            name: 'Desk and desk',
-            imageUrl: '../images/products/dining.jpg',
+            name: 'The new table',
+            imageUrl: '../images/products/Hoa_Phat-Table-The_new_table.jpg',
             category: 'table',
-            manufacture: 'DURIAN',
+            manufacture: 'HOA PHAT',
             model: '2018',
             size: '28x25'
         },
         {
             id: 4,
-            name: 'The No-cheap Desk',
-            imageUrl: '../images/products/dining.jpg',
-            category: 'table',
-            manufacture: 'DURIAN',
+            name: 'The vintage shelf',
+            imageUrl: '../images/products/Danish_store-Shelf-The_vintage_shelf.jpg',
+            category: 'shelf',
+            manufacture: 'THE DANISH STORE',
             model: '2018',
             size: '28x25'
         },
         {
             id: 5,
             name: 'A Desk?',
-            imageUrl: '../images/products/dining.jpg',
+            imageUrl: '../images/products/Hoa_Phat-Table-Table_table.jpg',
             category: 'table',
             manufacture: 'DURIAN',
             model: '2018',
@@ -68,7 +68,7 @@ myApp.controller('myAppController',function($scope, $localStorage){
         {
             id: 6,
             name: 'This is a Desk',
-            imageUrl: '../images/products/dining.jpg',
+            imageUrl: '../images/products/Hoa_Phat-Table-Table_table.jpg',
             category: 'table',
             manufacture: 'DURIAN',
             model: '2018',
