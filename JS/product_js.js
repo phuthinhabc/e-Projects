@@ -1,17 +1,17 @@
 let myApp = angular.module('myApp',['ngAnimate','ngStorage']);
-myApp.controller('myAppController',function($scope, $localStorage){
+myApp.controller('myAppController',function($scope, $sessionStorage){
 
 
 
 
 
-    // Create variable $localStorage.dataStoraged, run only one time
-    if ($localStorage.onlyOneTime == 0)
+    // Create variable $sessionStorage.dataStoraged, run only one time
+    if ($sessionStorage.onlyOneTime == 0)
     {}
     else
     {
-        $localStorage.dataStoraged =[];
-        $localStorage.onlyOneTime = 0;
+        $sessionStorage.dataStoraged =[];
+        $sessionStorage.onlyOneTime = 0;
     }
 
 
@@ -82,8 +82,8 @@ myApp.controller('myAppController',function($scope, $localStorage){
 
     // // // // // STORAGE DATA
 
-    // Get data for compareData array from localStorage.dataStoraged
-    $scope.compareData = $localStorage.dataStoraged;
+    // Get data for compareData array from sessionStorage.dataStoraged
+    $scope.compareData = $sessionStorage.dataStoraged;
 
 
 
@@ -122,7 +122,7 @@ myApp.controller('myAppController',function($scope, $localStorage){
                 {
                     $scope.compareData.push($scope.data[i]);
                     $scope.compareDatalength = $scope.compareData.length;
-                    $localStorage.dataStoraged = $scope.compareData;
+                    $sessionStorage.dataStoraged = $scope.compareData;
                     $scope.disableCompareButton = false;
                 }
             }
@@ -140,7 +140,7 @@ myApp.controller('myAppController',function($scope, $localStorage){
         let confirmValue = confirm('Are you sure?');
         if (confirmValue == true)
         {
-            $localStorage.dataStoraged=[];
+            $sessionStorage.dataStoraged=[];
             $scope.compareData = [];
             $scope.compareDatalength = 0;
             $scope.disableCompareButton = true;
@@ -159,6 +159,6 @@ myApp.controller('myAppController',function($scope, $localStorage){
     }
     $scope.clickForReset = function()
     {
-        $localStorage.$reset();
+        $sessionStorage.$reset();
     }
 });
