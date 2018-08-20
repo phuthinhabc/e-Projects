@@ -23,56 +23,74 @@ myApp.controller('myAppController',function($scope, $sessionStorage){
         {
             id: 1,
             name: 'Table table',
-            imageUrl: '../images/products/Hoa_Phat-Table-Table_table.jpg',
+            imageUrl: './images/products/Hoa_Phat-Table-Table_table.jpg',
             category: 'table',
             manufacture: 'HOA PHAT',
             model: '2017',
-            size: '28x25'
+            size: '28x25',
+            description: 'lorem ipsum dolor sit amet this is the demo for check width of container',
+            quantity_of_inventory: 5,
+            price: 800000
         },
         {
             id: 2,
             name: 'The shelf',
-            imageUrl: '../images/products/Danish_store-Shelf-The_shelf.jpg',
+            imageUrl: './images/products/Danish_store-Shelf-The_shelf.jpg',
             category: 'shelf',
-            manufacture: 'THE DANISH STORE',
+            manufacture: 'DANISH STORE',
             model: '2018',
-            size: '28x25'
+            size: '28x25',
+            description: 'lorem ipsum dolor sit amet this is the demo for check width of container',
+            quantity_of_inventory: 5,
+            price: 800000
         },
         {
             id: 3,
             name: 'The new table',
-            imageUrl: '../images/products/Hoa_Phat-Table-The_new_table.jpg',
+            imageUrl: './images/products/Hoa_Phat-Table-The_new_table.jpg',
             category: 'table',
             manufacture: 'HOA PHAT',
             model: '2018',
-            size: '28x25'
+            size: '28x25',
+            description: 'lorem ipsum dolor sit amet this is the demo for check width of container',
+            quantity_of_inventory: 5,
+            price: 800000
         },
         {
             id: 4,
             name: 'The vintage shelf',
-            imageUrl: '../images/products/Danish_store-Shelf-The_vintage_shelf.jpg',
+            imageUrl: './images/products/Danish_store-Shelf-The_vintage_shelf.jpg',
             category: 'shelf',
-            manufacture: 'THE DANISH STORE',
+            manufacture: 'DANISH STORE',
             model: '2018',
-            size: '28x25'
+            size: '28x25',
+            description: 'lorem ipsum dolor sit amet this is the demo for check width of container',
+            quantity_of_inventory: 5,
+            price: 800000
         },
         {
             id: 5,
             name: 'A Desk?',
-            imageUrl: '../images/products/Hoa_Phat-Table-Table_table.jpg',
+            imageUrl: './images/products/Hoa_Phat-Table-Table_table.jpg',
             category: 'table',
             manufacture: 'DURIAN',
-            model: '2018',
-            size: '28x25'
+            model: '2016',
+            size: '28x25',
+            description: 'lorem ipsum dolor sit amet this is the demo for check width of container',
+            quantity_of_inventory: 5,
+            price: 800000
         },
         {
             id: 6,
             name: 'This is a Desk',
-            imageUrl: '../images/products/Hoa_Phat-Table-Table_table.jpg',
+            imageUrl: './images/products/Hoa_Phat-Table-Table_table.jpg',
             category: 'table',
             manufacture: 'DURIAN',
             model: '2018',
-            size: '28x25'
+            size: '28x25',
+            description: 'lorem ipsum dolor sit amet this is the demo for check width of container',
+            quantity_of_inventory: 5,
+            price: 800000
         },
     ];
 
@@ -151,11 +169,158 @@ myApp.controller('myAppController',function($scope, $sessionStorage){
 
 
 
+    // SORTING ZONE
+
+
+    // Manufacture sorting
+    $scope.selectedListManufacture = {};
+
+    for (let i of $scope.data)
+    {
+        $scope.selectedListManufacture[i.manufacture] = false;
+    }
+
+    $scope.optionManufacture = [];
+
+    for(let i in $scope.selectedListManufacture)
+    {
+        $scope.optionManufacture.push(i);
+    }
+
+    $scope.counterManufactureFunction = function()
+    {
+        $scope.counterManufacture = 0;
+        for (let i in $scope.selectedListManufacture)
+        {
+            if($scope.selectedListManufacture[i] == false)
+            {
+                $scope.counterManufacture++;
+            }
+        }
+    }
+    $scope.bindManufacture = function(itemManufacture)
+    {
+        if($scope.counterManufacture == undefined || $scope.counterManufacture == 0 || $scope.counterManufacture == Object.keys($scope.selectedListManufacture).length)
+        {
+            console.log('test');
+            return true;
+        }
+        else
+        {
+            console.log('test else');   
+            for(let i in $scope.selectedListManufacture)
+            {
+                if (itemManufacture == i && $scope.selectedListManufacture[i] == true)
+                {
+                    return true;
+                }
+            }
+        }
+    }
+
+
+    // Category sorting
+    $scope.selectedListCategory = {};
+
+    for (let i of $scope.data)
+    {
+        $scope.selectedListCategory[i.category] = false;
+    }
+
+    $scope.optionCategory = [];
+
+    for(let i in $scope.selectedListCategory)
+    {
+        $scope.optionCategory.push(i);
+    }
+
+    $scope.counterCategoryFunction = function()
+    {
+        $scope.counterCategory = 0;
+        for (let i in $scope.selectedListCategory)
+        {
+            if($scope.selectedListCategory[i] == false)
+            {
+                $scope.counterCategory++;
+            }
+        }
+    }
+    $scope.bindCategory = function(itemCategory)
+    {
+        if($scope.counterCategory == undefined || $scope.counterCategory == 0 || $scope.counterCategory == Object.keys($scope.selectedListCategory).length)
+        {
+            console.log('test');
+            return true;
+        }
+        else
+        {
+            console.log('test else');   
+            for(let i in $scope.selectedListCategory)
+            {
+                if (itemCategory == i && $scope.selectedListCategory[i] == true)
+                {
+                    return true;
+                }
+            }
+        }
+    }
+
+
+    // Model sorting
+    $scope.selectedListModel = {};
+
+    for (let i of $scope.data)
+    {
+        $scope.selectedListModel[i.model] = false;
+    }
+
+    $scope.optionModel = [];
+
+    for(let i in $scope.selectedListModel)
+    {
+        $scope.optionModel.push(i);
+    }
+
+    $scope.counterModelFunction = function()
+    {
+        $scope.counterModel = 0;
+        for (let i in $scope.selectedListModel)
+        {
+            if($scope.selectedListModel[i] == false)
+            {
+                $scope.counterModel++;
+            }
+        }
+    }
+    $scope.bindModel = function(itemModel)
+    {
+        if($scope.counterModel == undefined || $scope.counterModel == 0 || $scope.counterModel == Object.keys($scope.selectedListModel).length)
+        {
+            console.log('test');
+            return true;
+        }
+        else
+        {
+            console.log('test else');   
+            for(let i in $scope.selectedListModel)
+            {
+                if (itemModel == i && $scope.selectedListModel[i] == true)
+                {
+                    return true;
+                }
+            }
+        }
+    }
+
+
+
+
+
     // // // // // FUNCTION TEST ZONE
 
     $scope.clickForTest = function()
     {
-        console.log($scope.compareDatalength);
+        console.log($scope.counterManufacture);
     }
     $scope.clickForReset = function()
     {
