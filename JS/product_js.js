@@ -30,7 +30,8 @@ myApp.controller('myAppController',function($scope, $sessionStorage){
             size: '28x25',
             description: 'lorem ipsum dolor sit amet this is the demo for check width of container',
             quantity_of_inventory: 5,
-            price: 800000
+            price: 800000,
+            sales: 10
         },
         {
             id: 2,
@@ -42,7 +43,8 @@ myApp.controller('myAppController',function($scope, $sessionStorage){
             size: '28x25',
             description: 'lorem ipsum dolor sit amet this is the demo for check width of container',
             quantity_of_inventory: 5,
-            price: 800000
+            price: 800000,
+            sales: 11
         },
         {
             id: 3,
@@ -54,7 +56,8 @@ myApp.controller('myAppController',function($scope, $sessionStorage){
             size: '28x25',
             description: 'lorem ipsum dolor sit amet this is the demo for check width of container',
             quantity_of_inventory: 5,
-            price: 800000
+            price: 800000,
+            sales: 14
         },
         {
             id: 4,
@@ -66,7 +69,8 @@ myApp.controller('myAppController',function($scope, $sessionStorage){
             size: '28x25',
             description: 'lorem ipsum dolor sit amet this is the demo for check width of container',
             quantity_of_inventory: 5,
-            price: 800000
+            price: 800000,
+            sales: 12
         },
         {
             id: 5,
@@ -78,7 +82,8 @@ myApp.controller('myAppController',function($scope, $sessionStorage){
             size: '28x25',
             description: 'lorem ipsum dolor sit amet this is the demo for check width of container',
             quantity_of_inventory: 5,
-            price: 800000
+            price: 800000,
+            sales: 10
         },
         {
             id: 6,
@@ -90,7 +95,8 @@ myApp.controller('myAppController',function($scope, $sessionStorage){
             size: '28x25',
             description: 'lorem ipsum dolor sit amet this is the demo for check width of container',
             quantity_of_inventory: 5,
-            price: 800000
+            price: 800000,
+            sales: 9
         },
     ];
 
