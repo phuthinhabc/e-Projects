@@ -27,3 +27,8 @@ input[type=submit]:hover {
     color:#000000 !important;
     text-decoration:none;
 }
+
+.my-navbar_item-style
+{
+    font-weight: bold;
+}
