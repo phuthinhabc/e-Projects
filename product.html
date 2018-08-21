@@ -26,6 +26,7 @@
     
   </head>
   <body class="container" ng-app="myApp" ng-controller="myAppController">
+
     <!-- Logo zone -->
     <nav class="navbar navbar-light bg-light d-block text-center">
       <a class="navbar-brand" href="#">
@@ -65,16 +66,21 @@
       </div>
     </nav>
     <!-- Navbar zone -->
-    <div class="row">
+
+    <div class="pl-3 row">
+
+      <!-- Filter zone -->
       <div class="col-md-2 bg-light py-2">
         <div class="d-block text-center">
           <h4><span>Filter</span><span><i class="fas fa-filter"></i></span></h4>
         </div>
         <div>
           <p>
-            <a class="btn btn-primary d-block" data-toggle="collapse" href="#sort_by_manufacture" role="button" aria-expanded="true" aria-controls="sort_by_manufacture">
+            <hr>
+            <a class="btn my-btn-filter d-block" data-toggle="collapse" href="#sort_by_manufacture" role="button" aria-expanded="true" aria-controls="sort_by_manufacture">
               Manufacture
             </a>
+            <hr>
           </p>
           <div class="collapse show" id="sort_by_manufacture">
             <div>
@@ -82,14 +88,16 @@
                 <input type="checkbox" ng-model='selectedListManufacture[item]' ng-change='counterManufactureFunction()'>
                 {{item}}
               </label>
+              <hr>
             </div>
           </div>
         </div>
         <div>
           <p>
-            <a class="btn btn-primary d-block" data-toggle="collapse" href="#sort_by_category" role="button" aria-expanded="true" aria-controls="sort_by_category">
+            <a class="btn my-btn-filter d-block" data-toggle="collapse" href="#sort_by_category" role="button" aria-expanded="true" aria-controls="sort_by_category">
               Category
             </a>
+            <hr>
           </p>
           <div class="collapse show" id="sort_by_category">
             <div>
@@ -97,14 +105,16 @@
                 <input type="checkbox" ng-model='selectedListCategory[item]' ng-change='counterCategoryFunction()'>
                 {{item}}
               </label>
+              <hr>
             </div>
           </div>
         </div>
         <div>
           <p>
-            <a class="btn btn-primary d-block" data-toggle="collapse" href="#sort_by_model" role="button" aria-expanded="true" aria-controls="sort_by_model">
+            <a class="btn my-btn-filter d-block" data-toggle="collapse" href="#sort_by_model" role="button" aria-expanded="true" aria-controls="sort_by_model">
               Model
             </a>
+            <hr>
           </p>
           <div class="collapse show" id="sort_by_model">
             <div>
@@ -112,13 +122,18 @@
                 <input type="checkbox" ng-model='selectedListModel[item]' ng-change='counterModelFunction()'>
                 {{item}}
               </label>
+              <hr>
             </div>
           </div>
         </div>
       </div>
+      <!-- Filter zone -->
+
       <div class="col-md-10 row">
+
+        <!-- Modal compare product zone -->
         <div class='col-md-12 text-right my-2'>
-          <button type="button" class="btn btn-primary mt-2 mr-2" data-toggle="modal" data-target="#compareModal" ng-disabled='disableCompareButton'>
+          <button type="button" class="btn my-compare-btn mt-2 mr-2" data-toggle="modal" data-target="#compareModal" ng-disabled='disableCompareButton'>
             Click for show compare
             <i class="fas fa-arrow-right"></i>
             <span id='my-counter-compare' class="position-absolute">{{compareDatalength}}</span>
@@ -166,12 +181,20 @@
             </div>
           </div>
         </div>
+        <!-- Modal compare product zone -->
+
+        <!-- Reset compare button zone -->
         <div class="col-md-12 text-right m-2 pr-4">
           <button type="button" class="btn btn-danger" ng-click='compareDataReset()'>
               Click for reset compare items
           </button>
         </div>
+        <!-- Reset compare button zone -->
+
+        <!-- Product bind zone -->
         <div ng-repeat="item in data" ng-if = "bindManufacture(item.manufacture) && bindCategory(item.category) && bindModel(item.model)" class="my-fixed-height col-md-4 text-center">
+
+          <!-- Non-overlay zone -->
           <div
             class="position-absolute bg-light"
             ng-init = "hovering = true"
@@ -190,6 +213,9 @@
               <p>Size: {{item.size}}</p>
               <p>Manufacture: {{item.manufacture}}</p>
           </div>
+          <!-- Non-overlay zone -->
+
+          <!-- Overlay-zone -->
           <div 
             class="position-absolute my-fixed-height-overlay d-block"
             ng-init = "hovering = true"
@@ -202,19 +228,24 @@
             ng-mouseleave="hovering = true"
           >
               <p class="text-left mx-2">{{item.description}}</p>
-              <button ng-click='clickForCompare(item.id)' class="btn btn-success my-2">
+              <button ng-click='clickForCompare(item.id)' class="btn my-button-overlay my-2">
                 <i class="fas fa-plus"></i>
                 <span>Click for compare</span>
               </button>
               <br>
-              <button class="btn btn-success my-2">
+              <button class="btn my-button-overlay my-2">
                 <i class="fas fa-file-download"></i>
                 <span>Download</span>
               </button>
           </div>
+          <!-- Overlay-zone -->
+          
         </div>
+        <!-- Product bind zone -->
+
       </div>
     </div>
+    
     <!-- Footer zone -->
     <hr>
     <div class="text-right display-4">
