@@ -70,7 +70,7 @@ myApp.controller('myAppController',function($scope, $sessionStorage){
             description: 'lorem ipsum dolor sit amet this is the demo for check width of container',
             quantity_of_inventory: 5,
             price: 800000,
-            sales: 12
+            sales: 20
         },
         {
             id: 5,
@@ -97,6 +97,19 @@ myApp.controller('myAppController',function($scope, $sessionStorage){
             quantity_of_inventory: 5,
             price: 800000,
             sales: 9
+        },
+        {
+            id: 7,
+            name: 'The mordern chair',
+            imageUrl: './images/products/Apolo-Chair-The_mordern_chair.jpg',
+            category: 'chair',
+            manufacture: 'APOLO',
+            model: '2013',
+            size: '50x50',
+            description: 'lorem ipsum dolor sit amet this is the demo for check width of container',
+            quantity_of_inventory: 3,
+            price: 420000,
+            sales: 20
         },
     ];
 
@@ -320,40 +333,37 @@ myApp.controller('myAppController',function($scope, $sessionStorage){
 
     $scope.bestseller = [];
     $scope.maxSales = $scope.data[0]['sales'];
-    $scope.bestsellerFunction = function()
+    $scope.counterBestSeller = 0;
+
+    if (Object.keys($scope.data).length > 5)
     {
-        $scope.counterBestSeller = 0;
-        if (Object.keys($scope.data).length > 5)
+        for (let i in $scope.data)
         {
-            for (let i in $scope.data)
+            if ($scope.data[i]['sales'] >= $scope.maxSales)
             {
-                if ($scope.data[i]['sales'] >= $scope.maxSales)
-                {
-                    $scope.maxSales = $scope.data[i]['sales'];
-                } 
-            }
-            while ($scope.counterBestSeller < 5)
-            {
-                for(let i in $scope.data)
-                {   
-                    if($scope.data[i]['sales'] == $scope.maxSales)
-                    {
-                        $scope.bestseller.push($scope.data[i]);
-                        $scope.counterBestSeller ++;
-                    }
-                }
-                $scope.maxSales --;
-            }
+                $scope.maxSales = $scope.data[i]['sales'];
+            } 
         }
-        else
+        while ($scope.counterBestSeller < 5)
         {
             for(let i in $scope.data)
             {   
-                $scope.bestseller.push($scope.data[i]);
+                if($scope.data[i]['sales'] == $scope.maxSales)
+                {
+                    $scope.bestseller.push($scope.data[i]);
+                    $scope.counterBestSeller ++;
+                }
             }
+            $scope.maxSales --;
         }
     }
-
+    else
+    {
+        for(let i in $scope.data)
+        {   
+            $scope.bestseller.push($scope.data[i]);
+        }
+    }
 
     // // // // // FUNCTION TEST ZONE
     $scope.clickForDemoBind = function()

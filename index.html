@@ -13,16 +13,19 @@
 
     <!-- Angular JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular-animate.js"></script>
+    <script src="./node_modules/ngstorage/ngStorage.min.js"></script>
 
     <!-- My JavaScript -->
     <script src="JS/index_js.js"></script>
+    <script src="JS/product_js.js"></script>
 
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
     <title>HOME</title>
   </head>
-<body class='container'>
+<body class='container' ng-app='myApp' ng-controller='myAppController'>
 
   <!-- Logo zone -->
   <nav class="navbar navbar-light bg-light d-block text-center">
@@ -107,6 +110,11 @@
   <!-- Best seller -->
   <div>
     <h3 class="text-center">Best Seller</h3>
+    <div class="row">
+      <div ng-repeat = 'item in bestseller' class="col-md-3">
+        <img class="img-thumbnail" ng-src="{{item.imageUrl}}" alt="">
+      </div>
+    </div>
   </div>
   <!-- Best seller -->
 

@@ -92,8 +92,8 @@
 .my-compare-btn:disabled
 {
     color: #fff;
-    background-color: #817C7A;
-    border-color: #817C7A;
+    background-color: rgb(189, 186, 185);
+    border-color: rgb(189, 186, 185);
 }
 .my-btn-filter
 {
