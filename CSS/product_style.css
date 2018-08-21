@@ -64,3 +64,40 @@
     color:#000000 !important;
     text-decoration:none;
 }
+.my-button-overlay, .my-compare-btn
+{
+    color: #fff;
+    background-color: #817C7A;
+    border-color: #817C7A;
+}
+.my-button-overlay:hover, .my-compare-btn:hover
+{
+    color: #fff;
+    background-color: #5F5C5A;
+    border-color: #5F5C5A;
+}
+.my-button-overlay:focus, .my-compare-btn:focus
+{
+    box-shadow: 0 0 0 0.2rem rgba(131, 125, 123, 0.5);
+}
+.my-button-overlay:active,
+{
+    transform: scale(0.95);
+}
+.my-compare-btn:disabled
+{
+    color: #fff;
+    background-color: #817C7A;
+    border-color: #817C7A;
+}
+.my-btn-filter
+{
+    box-shadow: none;
+    background: #9B9B9B;
+    color: white;
+}
+.my-btn-filter:hover, .my-btn-filter:focus
+{
+    box-shadow: none;
+    color:white;
+}
