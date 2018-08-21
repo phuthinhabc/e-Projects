@@ -31,7 +31,7 @@ myApp.controller('myAppController',function($scope, $sessionStorage){
             description: 'lorem ipsum dolor sit amet this is the demo for check width of container',
             quantity_of_inventory: 5,
             price: 800000,
-            sales: 10
+            sales: 3
         },
         {
             id: 2,
@@ -57,7 +57,7 @@ myApp.controller('myAppController',function($scope, $sessionStorage){
             description: 'lorem ipsum dolor sit amet this is the demo for check width of container',
             quantity_of_inventory: 5,
             price: 800000,
-            sales: 14
+            sales: 16
         },
         {
             id: 4,
@@ -208,12 +208,10 @@ myApp.controller('myAppController',function($scope, $sessionStorage){
     {
         if($scope.counterManufacture == undefined || $scope.counterManufacture == 0 || $scope.counterManufacture == Object.keys($scope.selectedListManufacture).length)
         {
-            console.log('test');
             return true;
         }
         else
         {
-            console.log('test else');   
             for(let i in $scope.selectedListManufacture)
             {
                 if (itemManufacture == i && $scope.selectedListManufacture[i] == true)
@@ -255,12 +253,10 @@ myApp.controller('myAppController',function($scope, $sessionStorage){
     {
         if($scope.counterCategory == undefined || $scope.counterCategory == 0 || $scope.counterCategory == Object.keys($scope.selectedListCategory).length)
         {
-            console.log('test');
             return true;
         }
         else
         {
-            console.log('test else');   
             for(let i in $scope.selectedListCategory)
             {
                 if (itemCategory == i && $scope.selectedListCategory[i] == true)
@@ -302,12 +298,10 @@ myApp.controller('myAppController',function($scope, $sessionStorage){
     {
         if($scope.counterModel == undefined || $scope.counterModel == 0 || $scope.counterModel == Object.keys($scope.selectedListModel).length)
         {
-            console.log('test');
             return true;
         }
         else
         {
-            console.log('test else');   
             for(let i in $scope.selectedListModel)
             {
                 if (itemModel == i && $scope.selectedListModel[i] == true)
@@ -322,11 +316,53 @@ myApp.controller('myAppController',function($scope, $sessionStorage){
 
 
 
-    // // // // // FUNCTION TEST ZONE
+    // BEST SELLER ZONE
 
+    $scope.bestseller = [];
+    $scope.maxSales = $scope.data[0]['sales'];
+    $scope.bestsellerFunction = function()
+    {
+        $scope.counterBestSeller = 0;
+        if (Object.keys($scope.data).length > 5)
+        {
+            for (let i in $scope.data)
+            {
+                if ($scope.data[i]['sales'] >= $scope.maxSales)
+                {
+                    $scope.maxSales = $scope.data[i]['sales'];
+                } 
+            }
+            while ($scope.counterBestSeller < 5)
+            {
+                for(let i in $scope.data)
+                {   
+                    if($scope.data[i]['sales'] == $scope.maxSales)
+                    {
+                        $scope.bestseller.push($scope.data[i]);
+                        $scope.counterBestSeller ++;
+                    }
+                }
+                $scope.maxSales --;
+            }
+        }
+        else
+        {
+            for(let i in $scope.data)
+            {   
+                $scope.bestseller.push($scope.data[i]);
+            }
+        }
+    }
+
+
+    // // // // // FUNCTION TEST ZONE
+    $scope.clickForDemoBind = function()
+    {
+        bestsellerFunction();
+    }
     $scope.clickForTest = function()
     {
-        console.log($scope.counterManufacture);
+        console.log($scope.bestseller)
     }
     $scope.clickForReset = function()
     {
