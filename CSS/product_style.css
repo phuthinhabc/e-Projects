@@ -59,3 +59,8 @@
     width: 25px;
     height: 25px;
 }
+.my-deco-none
+{
+    color:#000000 !important;
+    text-decoration:none;
+}
