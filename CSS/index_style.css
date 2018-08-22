@@ -7,3 +7,11 @@
 {
     font-weight: bold;
 }
+btn
+{
+    outline: none;
+}
+.my-bestSeller
+{
+    background: rgba(95, 92, 90, 0.3);
+}

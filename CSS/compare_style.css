@@ -1,0 +1,14 @@
+.my-navbar_item-style
+{
+    font-weight: bold;
+}
+#my-oos-deco, #my-is-deco
+{
+    color: #817C7A;
+    font-weight: bold;
+}
+.my-deco-none
+{
+    color:#000000 !important;
+    text-decoration:none;
+}

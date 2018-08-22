@@ -10,7 +10,7 @@ myApp.controller('myAppController',function($scope, $sessionStorage){
     {}
     else
     {
-        $sessionStorage.specificStoraged = [];
+        $sessionStorage.specificStoraged ={};
         $sessionStorage.dataStoraged =[];
         $sessionStorage.onlyOneTime = 0;
     }
@@ -25,91 +25,105 @@ myApp.controller('myAppController',function($scope, $sessionStorage){
             id: 1,
             name: 'Table table',
             imageUrl: './images/products/Hoa_Phat-Table-Table_table.jpg',
+            imageUrl2: './images/products/Hoa_Phat-Table-Table_table.jpg',
+            imageUrl3: './images/products/Hoa_Phat-Table-Table_table.jpg',
             category: 'table',
             manufacture: 'HOA PHAT',
             model: '2017',
             size: '28x25',
-            description: 'lorem ipsum dolor sit amet this is the demo for check width of container',
+            description: 'This is the description of product Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima?lorem ipsum dolor sit amet this is the demo for check width of container',
             quantity_of_inventory: 5,
-            price: 800000,
+            price: '800,000',
             sales: 3
         },
         {
             id: 2,
             name: 'The shelf',
             imageUrl: './images/products/Danish_store-Shelf-The_shelf.jpg',
+            imageUrl2: './images/products/Danish_store-Shelf-The_shelf.jpg',
+            imageUrl3: './images/products/Danish_store-Shelf-The_shelf.jpg',
             category: 'shelf',
             manufacture: 'DANISH STORE',
             model: '2018',
             size: '28x25',
-            description: 'lorem ipsum dolor sit amet this is the demo for check width of container',
-            quantity_of_inventory: 5,
-            price: 800000,
+            description: 'This is the description of product Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima?lorem ipsum dolor sit amet this is the demo for check width of container Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima?',
+            quantity_of_inventory: 0,
+            price: '800,000',
             sales: 11
         },
         {
             id: 3,
             name: 'The new table',
             imageUrl: './images/products/Hoa_Phat-Table-The_new_table.jpg',
+            imageUrl2: './images/products/Hoa_Phat-Table-The_new_table.jpg',
+            imageUrl3: './images/products/Hoa_Phat-Table-The_new_table.jpg',
             category: 'table',
             manufacture: 'HOA PHAT',
             model: '2018',
             size: '28x25',
-            description: 'lorem ipsum dolor sit amet this is the demo for check width of container',
+            description: 'This is the description of product Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima?lorem ipsum dolor sit amet this is the demo for check width of container',
             quantity_of_inventory: 5,
-            price: 800000,
+            price: '800,000',
             sales: 16
         },
         {
             id: 4,
             name: 'The vintage shelf',
             imageUrl: './images/products/Danish_store-Shelf-The_vintage_shelf.jpg',
+            imageUrl2: './images/products/Danish_store-Shelf-The_vintage_shelf.jpg',
+            imageUrl3: './images/products/Danish_store-Shelf-The_vintage_shelf.jpg',
             category: 'shelf',
             manufacture: 'DANISH STORE',
             model: '2018',
             size: '28x25',
-            description: 'lorem ipsum dolor sit amet this is the demo for check width of container',
+            description: 'This is the description of product Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima?lorem ipsum dolor sit amet this is the demo for check width of container',
             quantity_of_inventory: 5,
-            price: 800000,
+            price: '800,000',
             sales: 20
         },
         {
             id: 5,
             name: 'A Desk?',
             imageUrl: './images/products/Hoa_Phat-Table-Table_table.jpg',
+            imageUrl2: './images/products/Hoa_Phat-Table-Table_table.jpg',
+            imageUrl3: './images/products/Hoa_Phat-Table-Table_table.jpg',
             category: 'table',
             manufacture: 'DURIAN',
             model: '2016',
             size: '28x25',
-            description: 'lorem ipsum dolor sit amet this is the demo for check width of container',
+            description: 'This is the description of product Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima?lorem ipsum dolor sit amet this is the demo for check width of container',
             quantity_of_inventory: 5,
-            price: 800000,
+            price: '800,000',
             sales: 10
         },
         {
             id: 6,
             name: 'This is a Desk',
             imageUrl: './images/products/Hoa_Phat-Table-Table_table.jpg',
+            imageUrl2: './images/products/Hoa_Phat-Table-Table_table.jpg',
+            imageUrl3: './images/products/Hoa_Phat-Table-Table_table.jpg',
             category: 'table',
             manufacture: 'DURIAN',
             model: '2018',
             size: '28x25',
-            description: 'lorem ipsum dolor sit amet this is the demo for check width of container',
+            description: 'This is the description of product Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima?lorem ipsum dolor sit amet this is the demo for check width of container',
             quantity_of_inventory: 5,
-            price: 800000,
+            price: '800,000',
             sales: 9
         },
         {
             id: 7,
             name: 'The mordern chair',
             imageUrl: './images/products/Apolo-Chair-The_mordern_chair.jpg',
+            imageUrl2: './images/products/Apolo-Chair-The_mordern_chair.jpg',
+            imageUrl3: './images/products/Apolo-Chair-The_mordern_chair.jpg',
             category: 'chair',
             manufacture: 'APOLO',
             model: '2013',
             size: '50x50',
-            description: 'lorem ipsum dolor sit amet this is the demo for check width of container',
+            description: 'This is the description of product Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima?lorem ipsum dolor sit amet this is the demo for check width of container',
             quantity_of_inventory: 3,
-            price: 420000,
+            price: '420,000',
             sales: 20
         },
     ];
@@ -122,7 +136,7 @@ myApp.controller('myAppController',function($scope, $sessionStorage){
 
     // Get data for compareData array from sessionStorage.dataStoraged
     $scope.compareData = $sessionStorage.dataStoraged;
-
+    $scope.specificData = $sessionStorage.specificStoraged;
 
 
 
@@ -336,7 +350,7 @@ myApp.controller('myAppController',function($scope, $sessionStorage){
     $scope.maxSales = $scope.data[0]['sales'];
     $scope.counterBestSeller = 0;
 
-    if (Object.keys($scope.data).length > 5)
+    if (Object.keys($scope.data).length > 6)
     {
         for (let i in $scope.data)
         {
@@ -345,7 +359,7 @@ myApp.controller('myAppController',function($scope, $sessionStorage){
                 $scope.maxSales = $scope.data[i]['sales'];
             } 
         }
-        while ($scope.counterBestSeller < 5)
+        while ($scope.counterBestSeller < 6)
         {
             for(let i in $scope.data)
             {   
@@ -366,6 +380,28 @@ myApp.controller('myAppController',function($scope, $sessionStorage){
         }
     }
 
+
+
+
+
+    // SPECIFIC DATA ZONE
+
+    $scope.specificItemFunction = function(idItem)
+    {
+        $sessionStorage.specificStoraged = {};
+        for (let i in $scope.data)
+        {
+            if($scope.data[i]['id'] == idItem)
+            {
+                $sessionStorage.specificStoraged = $scope.data[i];
+            }
+        }
+    }
+
+
+
+
+    
     // // // // // FUNCTION TEST ZONE
     $scope.clickForDemoBind = function()
     {
@@ -373,7 +409,7 @@ myApp.controller('myAppController',function($scope, $sessionStorage){
     }
     $scope.clickForTest = function()
     {
-        console.log($scope.bestseller)
+        console.log($sessionStorage.specificStoraged);
     }
     $scope.clickForReset = function()
     {
