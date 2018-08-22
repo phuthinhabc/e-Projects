@@ -25,10 +25,10 @@
     <title>Product</title>
     
   </head>
-  <body class="container" ng-app="myApp" ng-controller="myAppController">
+  <body class="" ng-app="myApp" ng-controller="myAppController">
 
     <!-- Logo zone -->
-    <nav class="navbar navbar-light bg-light d-block text-center">
+    <nav class="container-fluid navbar navbar-light bg-light d-block text-center">
       <a class="navbar-brand" href="#">
         <h2><i class="fas fa-shopping-cart"></i><p><i>The DF Store</i></p></h2>
       </a>
@@ -36,7 +36,7 @@
     <!-- Logo zone -->
 
     <!-- Navbar zone -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="container-fluid navbar navbar-expand-lg navbar-light bg-light">
       <button class="navbar-toggler m-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -67,201 +67,206 @@
     </nav>
     <!-- Navbar zone -->
 
-    <div class="pl-3 row">
+    <div class="container">
+      <div class="pl-3 row">
 
-      <!-- Filter zone -->
-      <div class="col-md-2 bg-light py-2">
-        <div class="d-block text-center">
-          <h4><span>Filter</span><span><i class="fas fa-filter"></i></span></h4>
-        </div>
-        <div>
-          <p>
-            <hr>
-            <a class="btn my-btn-filter d-block" data-toggle="collapse" href="#sort_by_manufacture" role="button" aria-expanded="true" aria-controls="sort_by_manufacture">
-              Manufacture
-            </a>
-            <hr>
-          </p>
-          <div class="collapse show" id="sort_by_manufacture">
-            <div>
-              <label class="d-block" ng-repeat='item in optionManufacture'>
-                <input type="checkbox" ng-model='selectedListManufacture[item]' ng-change='counterManufactureFunction()'>
-                {{item}}
-              </label>
+        <!-- Filter zone -->
+        <div class="col-md-2 bg-light py-2">
+          <div class="d-block text-center">
+            <h4><span>Filter</span><span><i class="fas fa-filter"></i></span></h4>
+          </div>
+          <div>
+            <p>
               <hr>
+              <a class="btn my-btn-filter d-block" data-toggle="collapse" href="#sort_by_manufacture" role="button" aria-expanded="true" aria-controls="sort_by_manufacture">
+                Manufacture
+              </a>
+              <hr>
+            </p>
+            <div class="collapse show" id="sort_by_manufacture">
+              <div>
+                <label class="d-block" ng-repeat='item in optionManufacture'>
+                  <input type="checkbox" ng-model='selectedListManufacture[item]' ng-change='counterManufactureFunction()'>
+                  {{item}}
+                </label>
+                <hr>
+              </div>
             </div>
           </div>
-        </div>
-        <div>
-          <p>
-            <a class="btn my-btn-filter d-block" data-toggle="collapse" href="#sort_by_category" role="button" aria-expanded="true" aria-controls="sort_by_category">
-              Category
-            </a>
-            <hr>
-          </p>
-          <div class="collapse show" id="sort_by_category">
-            <div>
-              <label class="d-block" ng-repeat='item in optionCategory'>
-                <input type="checkbox" ng-model='selectedListCategory[item]' ng-change='counterCategoryFunction()'>
-                {{item}}
-              </label>
+          <div>
+            <p>
+              <a class="btn my-btn-filter d-block" data-toggle="collapse" href="#sort_by_category" role="button" aria-expanded="true" aria-controls="sort_by_category">
+                Category
+              </a>
               <hr>
+            </p>
+            <div class="collapse show" id="sort_by_category">
+              <div>
+                <label class="d-block" ng-repeat='item in optionCategory'>
+                  <input type="checkbox" ng-model='selectedListCategory[item]' ng-change='counterCategoryFunction()'>
+                  {{item}}
+                </label>
+                <hr>
+              </div>
             </div>
           </div>
-        </div>
-        <div>
-          <p>
-            <a class="btn my-btn-filter d-block" data-toggle="collapse" href="#sort_by_model" role="button" aria-expanded="true" aria-controls="sort_by_model">
-              Model
-            </a>
-            <hr>
-          </p>
-          <div class="collapse show" id="sort_by_model">
-            <div>
-              <label class="d-block" ng-repeat='item in optionModel'>
-                <input type="checkbox" ng-model='selectedListModel[item]' ng-change='counterModelFunction()'>
-                {{item}}
-              </label>
+          <div>
+            <p>
+              <a class="btn my-btn-filter d-block" data-toggle="collapse" href="#sort_by_model" role="button" aria-expanded="true" aria-controls="sort_by_model">
+                Model
+              </a>
               <hr>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Filter zone -->
-
-      <div class="col-md-10 row">
-
-        <!-- Modal compare product zone -->
-        <div class='col-md-12 text-right my-2'>
-          <button type="button" class="btn my-compare-btn mt-2 mr-2" data-toggle="modal" data-target="#compareModal" ng-disabled='disableCompareButton'>
-            Click for show compare
-            <i class="fas fa-arrow-right"></i>
-            <span id='my-counter-compare' class="position-absolute">{{compareDatalength}}</span>
-          </button>
-          <div class="modal fade" id="compareModal" role="dialog" aria-labelledby="compareModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="compareModalLabel">Compare zone</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <table class="table">
-                    <tbody>
-                      <tr>
-                        <td>Name</td>
-                        <td ng-repeat='item in compareData'>{{item.name}}</td>
-                      </tr>
-                      <tr>
-                        <td>Image</td>
-                        <td ng-repeat='item in compareData'><img ng-src="{{item.imageUrl}}" class="rounded img-thumbnail" alt="Product picture"></td>
-                      </tr>
-                      <tr>
-                        <td>Category</td>
-                        <td ng-repeat='item in compareData'>{{item.category}}</td>
-                      </tr>
-                      <tr>
-                        <td>Manufacture</td>
-                        <td ng-repeat='item in compareData'>{{item.manufacture}}</td>
-                      </tr>
-                      <tr>
-                        <td>Model</td>
-                        <td ng-repeat='item in compareData'>{{item.model}}</td>
-                      </tr>
-                      <tr>
-                        <td>Size</td>
-                        <td ng-repeat='item in compareData'>{{item.size}}</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+            </p>
+            <div class="collapse show" id="sort_by_model">
+              <div>
+                <label class="d-block" ng-repeat='item in optionModel'>
+                  <input type="checkbox" ng-model='selectedListModel[item]' ng-change='counterModelFunction()'>
+                  {{item}}
+                </label>
+                <hr>
               </div>
             </div>
           </div>
         </div>
-        <!-- Modal compare product zone -->
-
-        <!-- Reset compare button zone -->
-        <div class="col-md-12 text-right m-2 pr-4">
-          <button type="button" class="btn btn-danger" ng-click='compareDataReset()'>
-              Click for reset compare items
-          </button>
-        </div>
-        <!-- Reset compare button zone -->
-
-        <!-- Product bind zone -->
-        <div ng-repeat="item in data" ng-if = "bindManufacture(item.manufacture) && bindCategory(item.category) && bindModel(item.model)" class="my-fixed-height col-md-4 text-center">
-
-          <!-- Non-overlay zone -->
-          <div
-            class="position-absolute bg-light"
-            ng-init = "hovering = true"
-            ng-class=
-              "{
-                'my-product': hovering,
-                'my-product-hover': !hovering
-              }"
-            ng-mouseenter="hovering = false"
-            ng-mouseleave="hovering = true"
-          >
-              <h3>{{item.name}}</h3>
-              <img class="col text-center rounded mx-auto" ng-src="{{item.imageUrl}}" alt="Dining table">
-              <p>Category: {{item.category}}</p>
-              <p>Model: {{item.model}}</p>
-              <p>Size: {{item.size}}</p>
-              <p>Manufacture: {{item.manufacture}}</p>
+        <!-- Filter zone -->
+  
+        <div class="col-md-10 row">
+  
+          <!-- Modal compare product zone -->
+          <div class='col-md-12 text-right my-2'>
+            <button type="button" class="btn my-compare-btn mt-2 mr-2" data-toggle="modal" data-target="#compareModal" ng-disabled='disableCompareButton'>
+              Click for show compare
+              <i class="fas fa-arrow-right"></i>
+              <span id='my-counter-compare' class="position-absolute">{{compareDatalength}}</span>
+            </button>
+            <div class="modal fade" id="compareModal" role="dialog" aria-labelledby="compareModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="compareModalLabel">Compare zone</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <table class="table">
+                      <tbody>
+                        <tr>
+                          <td>Name</td>
+                          <td ng-repeat='item in compareData'>{{item.name}}</td>
+                        </tr>
+                        <tr>
+                          <td>Image</td>
+                          <td ng-repeat='item in compareData'><img ng-src="{{item.imageUrl}}" class="rounded img-thumbnail" alt="Product picture"></td>
+                        </tr>
+                        <tr>
+                          <td>Category</td>
+                          <td ng-repeat='item in compareData'>{{item.category}}</td>
+                        </tr>
+                        <tr>
+                          <td>Manufacture</td>
+                          <td ng-repeat='item in compareData'>{{item.manufacture}}</td>
+                        </tr>
+                        <tr>
+                          <td>Model</td>
+                          <td ng-repeat='item in compareData'>{{item.model}}</td>
+                        </tr>
+                        <tr>
+                          <td>Size</td>
+                          <td ng-repeat='item in compareData'>{{item.size}}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <!-- Non-overlay zone -->
-
-          <!-- Overlay-zone -->
-          <div 
-            class="position-absolute my-fixed-height-overlay d-block"
-            ng-init = "hovering = true"
-            ng-class=
-              "{
-                'my-overlay': hovering,
-                'my-overlay-hover': !hovering
-              }"
-            ng-mouseenter="hovering = false"
-            ng-mouseleave="hovering = true"
-          >
-              <p class="text-left mx-2">{{item.description}}</p>
-              <button ng-click='clickForCompare(item.id)' class="btn my-button-overlay my-2">
-                <i class="fas fa-plus"></i>
-                <span>Click for compare</span>
-              </button>
-              <br>
-              <button class="btn my-button-overlay my-2">
-                <i class="fas fa-file-download"></i>
-                <span>Download</span>
-              </button>
+          <!-- Modal compare product zone -->
+  
+          <!-- Reset compare button zone -->
+          <div class="col-md-12 text-right m-2 pr-4">
+            <button type="button" class="btn btn-danger" ng-click='compareDataReset()'>
+                Click for reset compare items
+            </button>
           </div>
-          <!-- Overlay-zone -->
-          
+          <!-- Reset compare button zone -->
+  
+          <!-- Product bind zone -->
+          <div ng-repeat="item in data" ng-if = "bindManufacture(item.manufacture) && bindCategory(item.category) && bindModel(item.model)" class="my-fixed-height col-md-4 text-center">
+  
+            <!-- Non-overlay zone -->
+            <div
+              class="position-absolute bg-light"
+              ng-init = "hovering = true"
+              ng-class=
+                "{
+                  'my-product': hovering,
+                  'my-product-hover': !hovering
+                }"
+              ng-mouseenter="hovering = false"
+              ng-mouseleave="hovering = true"
+            >
+                <h3>{{item.name}}</h3>
+                <img class="col text-center rounded mx-auto" ng-src="{{item.imageUrl}}" alt="Dining table">
+                <p>Category: {{item.category}}</p>
+                <p>Model: {{item.model}}</p>
+                <p>Size: {{item.size}}</p>
+                <p>Manufacture: {{item.manufacture}}</p>
+            </div>
+            <!-- Non-overlay zone -->
+  
+            <!-- Overlay-zone -->
+            <div 
+              class="position-absolute my-fixed-height-overlay d-block"
+              ng-init = "hovering = true"
+              ng-class=
+                "{
+                  'my-overlay': hovering,
+                  'my-overlay-hover': !hovering
+                }"
+              ng-mouseenter="hovering = false"
+              ng-mouseleave="hovering = true"
+            >
+                <p class="text-left mx-2">{{item.description}}</p>
+                <button ng-click='clickForCompare(item.id)' class="btn my-button-overlay my-2">
+                  <i class="fas fa-plus"></i>
+                  <span>Click for compare</span>
+                </button>
+                <br>
+                <button class="btn my-button-overlay my-2">
+                  <i class="fas fa-file-download"></i>
+                  <span>Download</span>
+                </button>
+            </div>
+            <!-- Overlay-zone -->
+            
+          </div>
+          <!-- Product bind zone -->
+  
         </div>
-        <!-- Product bind zone -->
 
       </div>
+      
+      <!-- Footer zone -->
+      <hr>
+      <div class="text-right display-4">
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a class='my-deco-none' href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a class='my-deco-none' href=""><i class="fab fa-pinterest"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a class='my-deco-none' href=""><i class="fab fa-twitter-square"></i></a>
+          </li>
+        </ul>
+      </div>
+      <!-- Footer zone -->
+
     </div>
-    
-    <!-- Footer zone -->
-    <hr>
-    <div class="text-right display-4">
-      <ul class="list-inline">
-        <li class="list-inline-item">
-          <a class='my-deco-none' href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
-        </li>
-        <li class="list-inline-item">
-          <a class='my-deco-none' href=""><i class="fab fa-pinterest"></i></a>
-        </li>
-        <li class="list-inline-item">
-          <a class='my-deco-none' href=""><i class="fab fa-twitter-square"></i></a>
-        </li>
-      </ul>
-    </div>
-    <!-- Footer zone -->
+
     <div>
       <button ng-click='bestsellerFunction()'>Click for run demo bind!</button>
       <button ng-click='clickForTest()'>Click for bind!</button>

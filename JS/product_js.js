@@ -10,6 +10,7 @@ myApp.controller('myAppController',function($scope, $sessionStorage){
     {}
     else
     {
+        $sessionStorage.specificStoraged = [];
         $sessionStorage.dataStoraged =[];
         $sessionStorage.onlyOneTime = 0;
     }
