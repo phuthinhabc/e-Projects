@@ -14,7 +14,9 @@
     <!-- Angular JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular-animate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.7.2/angular-sanitize.js"></script>
     <script src="./node_modules/ngstorage/ngStorage.min.js"></script>
+    
 
     <!-- My JavaScript -->
     <script src="JS/product_js.js"></script>
@@ -72,7 +74,6 @@
 
       <!-- Main zone -->
       <div class="row">
-
         <!-- Filter zone -->
         <div class="col-md-2 py-2">
           <div class="d-block text-center">
@@ -132,126 +133,123 @@
           </div>
         </div>
         <!-- Filter zone -->
-  
-        <div class="col-md-10 row">
-  
-          <!-- Modal compare product zone -->
-          <div class='col-md-12 text-right my-2'>
-            <button type="button" class="btn my-compare-btn mt-2 mr-2" data-toggle="modal" data-target="#compareModal" ng-disabled='disableCompareButton'>
-              Click for show compare
-              <i class="fas fa-arrow-right"></i>
-              <span id='my-counter-compare' class="position-absolute">{{compareDatalength}}</span>
-            </button>
-            <div class="modal fade" id="compareModal" role="dialog" aria-labelledby="compareModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <span><a href="./compare.html" class="modal-title btn my-compare-btn" id="compareModalLabel"><span class="pr-2">See in full page</span><span><i class="fas fa-arrow-right"></i></span></a></span>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <table class="table">
-                      <tbody>
-                        <tr>
-                          <td>Name</td>
-                          <td ng-repeat='item in compareData'>{{item.name}}</td>
-                        </tr>
-                        <tr>
-                          <td>Image</td>
-                          <td ng-repeat='item in compareData'><img ng-src="{{item.imageUrl}}" class="rounded img-thumbnail" alt="Product picture"></td>
-                        </tr>
-                        <tr>
-                          <td>Category</td>
-                          <td ng-repeat='item in compareData'>{{item.category}}</td>
-                        </tr>
-                        <tr>
-                          <td>Manufacture</td>
-                          <td ng-repeat='item in compareData'>{{item.manufacture}}</td>
-                        </tr>
-                        <tr>
-                          <td>Model</td>
-                          <td ng-repeat='item in compareData'>{{item.model}}</td>
-                        </tr>
-                        <tr>
-                          <td>Size</td>
-                          <td ng-repeat='item in compareData'>{{item.size}}</td>
-                        </tr>
-                      </tbody>
-                    </table>
+        <div class="col-md-10">
+          <div class="row">
+            <!-- Modal compare product zone -->
+            <div class='col-md-12 text-right my-2'>
+              <button type="button" class="btn my-compare-btn mt-2 mr-2" data-toggle="modal" data-target="#compareModal" ng-disabled='disableCompareButton'>
+                Click for show compare
+                <i class="fas fa-arrow-right"></i>
+                <span id='my-counter-compare' class="position-absolute">{{compareDatalength}}</span>
+              </button>
+              <div class="modal fade" id="compareModal" role="dialog" aria-labelledby="compareModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <span><a href="./compare.html" class="modal-title btn my-compare-btn" id="compareModalLabel"><span class="pr-2">See in full page</span><span><i class="fas fa-arrow-right"></i></span></a></span>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <table class="table">
+                        <tbody>
+                          <tr>
+                            <td>Name</td>
+                            <td ng-repeat='item in compareData'>{{item.name}}</td>
+                          </tr>
+                          <tr>
+                            <td>Image</td>
+                            <td ng-repeat='item in compareData'><img ng-src="{{item.imageUrl}}" class="rounded img-thumbnail" alt="Product picture"></td>
+                          </tr>
+                          <tr>
+                            <td>Category</td>
+                            <td ng-repeat='item in compareData'>{{item.category}}</td>
+                          </tr>
+                          <tr>
+                            <td>Manufacture</td>
+                            <td ng-repeat='item in compareData'>{{item.manufacture}}</td>
+                          </tr>
+                          <tr>
+                            <td>Model</td>
+                            <td ng-repeat='item in compareData'>{{item.model}}</td>
+                          </tr>
+                          <tr>
+                            <td>Size</td>
+                            <td ng-repeat='item in compareData'>{{item.size}}</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <!-- Modal compare product zone -->
-  
-          <!-- Reset compare button zone -->
-          <div class="col-md-12 text-right m-2 pr-4">
-            <button type="button" class="btn btn-danger" ng-click='compareDataReset()'>
-                Click for reset compare items
-            </button>
-          </div>
-          <!-- Reset compare button zone -->
-  
-          <!-- Product bind zone -->
-          <div ng-repeat="item in data" ng-if = "bindManufacture(item.manufacture) && bindCategory(item.category) && bindModel(item.model)" class="my-fixed-height col-md-4 text-center">
-  
-            <!-- Non-overlay zone -->
-            <div
-              class="position-absolute bg-light"
-              ng-init = "hovering = true"
-              ng-class=
-                "{
-                  'my-product': hovering,
-                  'my-product-hover': !hovering
-                }"
-              ng-mouseenter="hovering = false"
-              ng-mouseleave="hovering = true"
-            >
-                <h3>{{item.name}}</h3>
-                <img class="col text-center rounded mx-auto" ng-src="{{item.imageUrl}}" alt="Dining table">
-                <p>Category: {{item.category}}</p>
-                <p>Model: {{item.model}}</p>
-                <p>Size: {{item.size}}</p>
-                <p>Manufacture: {{item.manufacture}}</p>
-            </div>
-            <!-- Non-overlay zone -->
-  
-            <!-- Overlay-zone -->
-            <div 
-              class="position-absolute my-fixed-height-overlay w-100 text-center pt-5"
-              ng-init = "hovering = true"
-              ng-class=
-                "{
-                  'my-overlay': hovering,
-                  'my-overlay-hover': !hovering
-                }"
-              ng-mouseenter="hovering = false"
-              ng-mouseleave="hovering = true"
-            >
-                <a ng-click='specificItemFunction(item.id)' href="./specific_product.html" class="btn my-button-overlay my-2">
-                  <span>Click for more</span>
-                </a>
-                <br>
-                <button ng-click='clickForCompare(item.id)' class="btn my-button-overlay my-2">
-                  <i class="fas fa-plus"></i>
-                  <span>Click for compare</span>
+            <!-- Modal compare product zone -->
+    
+            <!-- Reset compare button zone -->
+            <div class="col-md-12 text-right m-2 pr-4">
+                <button type="button" class="btn btn-danger" ng-click='compareDataReset()'>
+                    Click for reset compare items
                 </button>
-                <br>
-                <a href="{{item.productDocument}}" class="btn my-button-overlay my-2">
-                  <i class="fas fa-file-download"></i>
-                  <span>Download</span>
-                </a>
+              <!-- Reset compare button zone -->
             </div>
-            <!-- Overlay-zone -->
-            
+            <!-- Product bind zone -->
+            <div ng-repeat="item in data" ng-if = "bindManufacture(item.manufacture) && bindCategory(item.category) && bindModel(item.model)" class="my-fixed-height col-md-4 text-center">
+    
+              <!-- Non-overlay zone -->
+              <div
+                class="position-absolute bg-light"
+                ng-init = "hovering = true"
+                ng-class=
+                  "{
+                    'my-product': hovering,
+                    'my-product-hover': !hovering
+                  }"
+                ng-mouseenter="hovering = false"
+                ng-mouseleave="hovering = true"
+              >
+                  <h3>{{item.name}}</h3>
+                  <img class="col text-center rounded mx-auto" ng-src="{{item.imageUrl}}" alt="Dining table">
+                  <p>Category: {{item.category}}</p>
+                  <p>Model: {{item.model}}</p>
+                  <p>Size: {{item.size}}</p>
+                  <p>Manufacture: {{item.manufacture}}</p>
+              </div>
+              <!-- Non-overlay zone -->
+    
+              <!-- Overlay-zone -->
+              <div 
+                class="position-absolute my-fixed-height-overlay w-100 text-center pt-5"
+                ng-init = "hovering = true"
+                ng-class=
+                  "{
+                    'my-overlay': hovering,
+                    'my-overlay-hover': !hovering
+                  }"
+                ng-mouseenter="hovering = false"
+                ng-mouseleave="hovering = true"
+              >
+                  <a ng-click='specificItemFunction(item.id)' href="./specific_product.html" class="btn my-button-overlay my-2">
+                    <span>Click for more</span>
+                  </a>
+                  <br>
+                  <button ng-click='clickForCompare(item.id)' class="btn my-button-overlay my-2">
+                    <i class="fas fa-plus"></i>
+                    <span>Click for compare</span>
+                  </button>
+                  <br>
+                  <a href="{{item.productDocument}}" class="btn my-button-overlay my-2">
+                    <i class="fas fa-file-download"></i>
+                    <span>Download</span>
+                  </a>
+              </div>
+              <!-- Overlay-zone -->
+              
+            </div>
+            <!-- Product bind zone -->
           </div>
-          <!-- Product bind zone -->
-  
         </div>
-
       </div>
       <!-- Main zone -->
       

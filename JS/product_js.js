@@ -1,4 +1,4 @@
-let myApp = angular.module('myApp',['ngAnimate','ngStorage']);
+let myApp = angular.module('myApp',['ngAnimate','ngStorage','ngSanitize']);
 myApp.controller('myAppController',function($scope, $sessionStorage){
 
 
@@ -23,18 +23,71 @@ myApp.controller('myAppController',function($scope, $sessionStorage){
     $scope.data=[
         {
             id: 1,
-            name: 'Table table',
-            imageUrl: './images/products/Hoa_Phat-Table-Table_table.jpg',
-            imageUrl2: './images/products/Hoa_Phat-Table-Table_table.jpg',
-            imageUrl3: './images/products/Hoa_Phat-Table-Table_table.jpg',
-            productDocument: './product_document/Apolo-Chair-The_mordern_chair.docx',
-            category: 'table',
-            manufacture: 'HOA PHAT',
+            name: 'Chair',
+            imageUrl: './images/products/product1/ingolf-chair-1.jpg',
+            imageUrl2: './images/products/product1/ingolf-chair-2.jpg',
+            imageUrl3: './images/products/product1/ingolf-chair-3.jpg',
+            imageUrl4: './images/products/product1/ingolf-chair-4.jpg',
+            imageUrl5: './images/products/product1/ingolf-chair-5.jpg',
+            imageUrl6: './images/products/product1/ingolf-chair-6.jpg',
+            imageUrl7: './images/products/product1/ingolf-chair-7.jpg',
+            imageUrl8: './images/products/product1/ingolf-chair-8.jpg',
+            keyfeatures:
+            {
+                'Information of keyfeatures': 'Solid wood is a hardwearing natural material.',
+                'Assembled size': 
+                {
+                    'Tested for': '110 kg',
+                    'Width': '43 cm',
+                    'Depth': '52 cm',
+                    'Height': '91 cm',
+                    'Seat width': '41 cm',
+                    'Seat depth': '38 cm',
+                    'Seat height': '44 cm'
+                },
+                'Package_display': 'Package size & weight',
+                'Pakage name': 'Chair INGOLF',
+                'Pakages': '1',
+                'Package size & weight':
+                {
+                    'Pakage 1':
+                    {
+                        'Article no': '701.032.50',
+                        'Package': '1',
+                        'Length': '96 cm',
+                        'Width': '47 cm',
+                        'Height': '14 cm',
+                        'Weight': '8.90 kg',
+                        'Volume per package': '61.9 l'
+                    },
+                    'Pakage 2':
+                    {
+                        'Article no': '701.032.50',
+                        'Package': '2',
+                        'Length': '96 cm',
+                        'Width': '47 cm',
+                        'Height': '14 cm',
+                        'Weight': '8.90 kg',
+                        'Volume per package': '61.9 l'
+                    }
+                }
+            },
+            careinstructions: 
+                `Wipe clean with a cloth dampened in a mild cleaner.<br><br> 
+                Wipe dry with a clean cloth.<br><br>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit aliquid provident eveniet, minima voluptate, quibusdam libero perferendis ex qui illo mollitia culpa distinctio. Autem nihil fugit accusamus, maiores facilis odit.`,
+            materials: 
+                `Basematerial: Solid wood<br><br>
+                Seat: Fibreboard<br><br>
+                All parts: Acrylic paint`,
+            productDocument: './product_document/INGOLF-Chair.docx',
+            category: 'chair',
+            manufacture: 'INGOLF',
             model: '2017',
             size: '28x25',
             description: 'This is the description of product Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima?lorem ipsum dolor sit amet this is the demo for check width of container',
             quantity_of_inventory: 5,
-            price: '800,000',
+            price: '70',
             sales: 3
         },
         {
