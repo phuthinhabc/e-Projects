@@ -109,12 +109,12 @@
   <!-- Carousel zone -->
 
   <!-- Best seller -->
-  <div class='container py-1 bg-light'>
+  <div class='container bg-light'>
     <h3 class="text-center pt-3">Best seller</h3>
     <div class="row">
       <div 
         ng-repeat = 'item in bestseller' 
-        class="col-md-2 pt-4"
+        class="col-md-2"
         ng-init = "hovering = false"
         ng-class=
           "{
@@ -124,9 +124,9 @@
         ng-mouseleave="hovering = false"
       >
         <a class="btn my-deco-none" ng-click='specificItemFunction(item.id)' href="./specific_product.html">
-          <img class="img-thumbnail" ng-src="{{item.imageUrl}}" alt="">
-          <p>{{item.name}}</p>
+          <img class="img-thumbnail" ng-src="{{item['imageUrl']['imageUrl']}}" alt="">
         </a>
+        <p class="text-center">{{item.name}}</p>
       </div>
     </div>
   </div>
@@ -134,7 +134,7 @@
 
   <!-- Contain zone -->
 
-  <div class="container">
+  <div class="container pt-3">
     <h2 class="text-center">Who we are?</h2>
     <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, tempore. Maiores hic perspiciatis id fugit repellat omnis? Perspiciatis, consequatur? Eveniet quis a facilis est voluptas, magni atque. Aperiam, blanditiis pariatur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, tempore. Maiores hic perspiciatis id fugit repellat omnis? Perspiciatis, consequatur? Eveniet quis a facilis est voluptas, magni atque. Aperiam, blanditiis pariatur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, tempore. Maiores hic perspiciatis id fugit repellat omnis? Perspiciatis, consequatur? Eveniet quis a facilis est voluptas, magni atque. Aperiam, blanditiis pariaturLorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, tempore. Maiores hic perspiciatis id fugit repellat omnis? Perspiciatis, consequatur? Eveniet quis a facilis est voluptas, magni atque. Aperiam, blanditiis pariatur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, tempore. Maiores hic perspiciatis id fugit repellat omnis? Perspiciatis, consequatur? Eveniet quis a facilis est voluptas, magni atque. Aperiam, blanditiis pariatur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, tempore. Maiores hic perspiciatis id fugit repellat omnis? Perspiciatis, consequatur? Eveniet quis a facilis est voluptas, magni atque. Aperiam, blanditiis pariatur.</p>
   </div>

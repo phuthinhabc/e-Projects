@@ -74,31 +74,40 @@
         <!-- Carousel picture -->
         <div class="col-md-6">
           <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
-
+            <ol class="carousel-indicators row">
+              <img class="col-md-2 img-thumbnail active" ng-class="{'d-none' : specificData['imageUrl']['imageUrl'] == ''}" ng-src="{{specificData['imageUrl']['imageUrl']}}" alt="First slide" data-target="#carouselIndicators" data-slide-to="0">
+              <img class="col-md-2 img-thumbnail" ng-class="{'d-none' : specificData['imageUrl']['imageUrl2'] == ''}" ng-src="{{specificData['imageUrl']['imageUrl2']}}" alt="First slide" data-target="#carouselIndicators" data-slide-to="1">
+              <img class="col-md-2 img-thumbnail" ng-class="{'d-none' : specificData['imageUrl']['imageUrl3'] == ''}" ng-src="{{specificData['imageUrl']['imageUrl3']}}" alt="First slide" data-target="#carouselIndicators" data-slide-to="2">
+              <img class="col-md-2 img-thumbnail" ng-class="{'d-none' : specificData['imageUrl']['imageUrl4'] == ''}" ng-src="{{specificData['imageUrl']['imageUrl4']}}" alt="First slide" data-target="#carouselIndicators" data-slide-to="3">
+              <img class="col-md-2 img-thumbnail" ng-class="{'d-none' : specificData['imageUrl']['imageUrl5'] == ''}" ng-src="{{specificData['imageUrl']['imageUrl5']}}" alt="First slide" data-target="#carouselIndicators" data-slide-to="4">
+              <img class="col-md-2 img-thumbnail" ng-class="{'d-none' : specificData['imageUrl']['imageUrl6'] == ''}" ng-src="{{specificData['imageUrl']['imageUrl6']}}" alt="First slide" data-target="#carouselIndicators" data-slide-to="5">
+              <img class="col-md-2 img-thumbnail" ng-class="{'d-none' : specificData['imageUrl']['imageUrl7'] == ''}" ng-src="{{specificData['imageUrl']['imageUrl7']}}" alt="First slide" data-target="#carouselIndicators" data-slide-to="6">
+              <img class="col-md-2 img-thumbnail" ng-class="{'d-none' : specificData['imageUrl']['imageUrl8'] == ''}" ng-src="{{specificData['imageUrl']['imageUrl8']}}" alt="First slide" data-target="#carouselIndicators" data-slide-to="7">
+            </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="img-thumbnail d-block w-100" ng-src="{{specificData.imageUrl}}" alt="First slide">
+                <img class="img-thumbnail d-block w-100" ng-src="{{specificData['imageUrl']['imageUrl']}}" alt="First slide">
               </div>
               <div class="carousel-item">
-                <img class="img-thumbnail d-block w-100" ng-src="{{specificData.imageUrl2}}" alt="Second slide">
+                <img class="img-thumbnail d-block w-100" ng-src="{{specificData['imageUrl']['imageUrl2']}}" alt="Second slide">
               </div>
               <div class="carousel-item">
-                <img class="img-thumbnail d-block w-100" ng-src="{{specificData.imageUrl3}}" alt="Third slide">
+                <img class="img-thumbnail d-block w-100" ng-src="{{specificData['imageUrl']['imageUrl3']}}" alt="Third slide">
               </div>
               <div class="carousel-item">
-                <img class="img-thumbnail d-block w-100" ng-src="{{specificData.imageUrl4}}" alt="Third slide">
+                <img class="img-thumbnail d-block w-100" ng-src="{{specificData['imageUrl']['imageUrl4']}}" alt="Third slide">
               </div>
               <div class="carousel-item">
-                <img class="img-thumbnail d-block w-100" ng-src="{{specificData.imageUrl5}}" alt="Third slide">
+                <img class="img-thumbnail d-block w-100" ng-src="{{specificData['imageUrl']['imageUrl5']}}" alt="Third slide">
               </div>
               <div class="carousel-item">
-                <img class="img-thumbnail d-block w-100" ng-src="{{specificData.imageUrl6}}" alt="Third slide">
+                <img class="img-thumbnail d-block w-100" ng-src="{{specificData['imageUrl']['imageUrl6']}}" alt="Third slide">
               </div>
               <div class="carousel-item">
-                <img class="img-thumbnail d-block w-100" ng-src="{{specificData.imageUrl7}}" alt="Third slide">
+                <img class="img-thumbnail d-block w-100" ng-src="{{specificData['imageUrl']['imageUrl7']}}" alt="Third slide">
               </div>
               <div class="carousel-item">
-                <img class="img-thumbnail d-block w-100" ng-src="{{specificData.imageUrl8}}" alt="Third slide">
+                <img class="img-thumbnail d-block w-100" ng-src="{{specificData['imageUrl']['imageUrl8']}}" alt="Third slide">
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
@@ -128,31 +137,20 @@
             <button class="my-btn mx-3"><span class="my-inner-btn">Click</span></button>
             <button class="my-btn"><span class="my-inner-btn">Click</span></button>
           </div>
-          <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators row">
-              <img class="col-md-2 img-thumbnail active" ng-src="{{specificData.imageUrl}}" alt="First slide" data-target="#carouselIndicators" data-slide-to="0">
-              <img class="col-md-2 img-thumbnail " ng-src="{{specificData.imageUrl2}}" alt="First slide" data-target="#carouselIndicators" data-slide-to="1">
-              <img class="col-md-2 img-thumbnail " ng-src="{{specificData.imageUrl3}}" alt="First slide" data-target="#carouselIndicators" data-slide-to="2">
-              <img class="col-md-2 img-thumbnail " ng-src="{{specificData.imageUrl4}}" alt="First slide" data-target="#carouselIndicators" data-slide-to="3">
-              <img class="col-md-2 img-thumbnail " ng-src="{{specificData.imageUrl5}}" alt="First slide" data-target="#carouselIndicators" data-slide-to="4">
-              <img class="col-md-2 img-thumbnail " ng-src="{{specificData.imageUrl6}}" alt="First slide" data-target="#carouselIndicators" data-slide-to="5">
-              <img class="col-md-2 img-thumbnail " ng-src="{{specificData.imageUrl7}}" alt="First slide" data-target="#carouselIndicators" data-slide-to="6">
-              <img class="col-md-2 img-thumbnail " ng-src="{{specificData.imageUrl8}}" alt="First slide" data-target="#carouselIndicators" data-slide-to="7">
-            </ol>
-          </div>
         </div> 
         <!-- Product details -->
         <div ng-init="binder = 1" class="container my-3">
           <hr>
-          <h2 class="text-center font-italic">Product details</h2>
+          <h1 class="text-center font-italic">Product details</h1>
           <div class="row">
             <!-- Left list -->
             <div id="my-information-list" class="col-md-6 text-right">
               <ul>
                 <li><a ng-click="binder = 1" ng-class="{'font-weight-bold': binder==1}" class="d-block">Key features <i class="fas fa-chevron-right"></i></i></a></li>
                 <li><a ng-click="binder = 2" ng-class="{'font-weight-bold': binder==2}" class="d-block">Care instructions <i class="fas fa-chevron-right"></i></a></li>
-                <li><a ng-click="binder = 3" ng-class="{'font-weight-bold': binder==3}" class="d-block">Materials <i class="fas fa-chevron-right"></i></a></li>
-                <li><a ng-click="binder = 4" ng-class="{'font-weight-bold': binder==4}" class="d-block">Documents <i class="fas fa-chevron-right"></i></a></li>
+                <li><a ng-click="binder = 3" ng-class="{'font-weight-bold': binder==3}" class="d-block">Good to know <i class="fas fa-chevron-right"></i></a></li>
+                <li><a ng-click="binder = 4" ng-class="{'font-weight-bold': binder==4}" class="d-block">Materials <i class="fas fa-chevron-right"></i></a></li>
+                <li><a ng-click="binder = 5" ng-class="{'font-weight-bold': binder==5}" class="d-block">Documents <i class="fas fa-chevron-right"></i></a></li>
               </ul>
             </div>
             <!-- Left list -->
@@ -200,8 +198,18 @@
                 </div>
               </div>
               <!-- Care instructions -->
-              <!-- Materials  -->
+              <!-- Care instructions -->
               <div ng-if="binder == 3">
+                <div>
+                  <p class="font-weight-bold">-- Good to know --</p>
+                  <p class="text-justify" ng-bind-html="specificData['goodtoknow']"></p>
+                  <p class="font-weight-bold">-- Designer --</p>
+                  <p class="text-justify" ng-bind-html="specificData['designer']"></p>
+                </div>
+              </div>
+              <!-- Care instructions -->
+              <!-- Materials  -->
+              <div ng-if="binder == 4">
                 <div>
                   <p class="font-weight-bold">-- Materials --</p>
                   <p class="text-justify" ng-bind-html="specificData['materials']"></p>
@@ -209,7 +217,7 @@
               </div>
               <!-- Materials -->
               <!-- Documents  -->
-              <div ng-if="binder == 4">
+              <div ng-if="binder == 5">
                 <div>
                   <p class="font-weight-bold">-- Documents --</p>
                   <a class="text-justify" href="{{specificData.productDocument}}">Click for download</a>

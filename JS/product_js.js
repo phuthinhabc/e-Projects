@@ -24,14 +24,17 @@ myApp.controller('myAppController',function($scope, $sessionStorage){
         {
             id: 1,
             name: 'Chair',
-            imageUrl: './images/products/product1/ingolf-chair-1.jpg',
-            imageUrl2: './images/products/product1/ingolf-chair-2.jpg',
-            imageUrl3: './images/products/product1/ingolf-chair-3.jpg',
-            imageUrl4: './images/products/product1/ingolf-chair-4.jpg',
-            imageUrl5: './images/products/product1/ingolf-chair-5.jpg',
-            imageUrl6: './images/products/product1/ingolf-chair-6.jpg',
-            imageUrl7: './images/products/product1/ingolf-chair-7.jpg',
-            imageUrl8: './images/products/product1/ingolf-chair-8.jpg',
+            imageUrl:
+            {
+                imageUrl: './images/products/product1/ingolf-chair-1.jpg',
+                imageUrl2: './images/products/product1/ingolf-chair-2.jpg',
+                imageUrl3: './images/products/product1/ingolf-chair-3.jpg',
+                imageUrl4: './images/products/product1/ingolf-chair-4.jpg',
+                imageUrl5: './images/products/product1/ingolf-chair-5.jpg',
+                imageUrl6: './images/products/product1/ingolf-chair-6.jpg',
+                imageUrl7: './images/products/product1/ingolf-chair-7.jpg',
+                imageUrl8: './images/products/product1/ingolf-chair-8.jpg',
+            },
             keyfeatures:
             {
                 'Information of keyfeatures': 'Solid wood is a hardwearing natural material.',
@@ -59,132 +62,105 @@ myApp.controller('myAppController',function($scope, $sessionStorage){
                         'Height': '14 cm',
                         'Weight': '8.90 kg',
                         'Volume per package': '61.9 l'
-                    },
-                    'Pakage 2':
-                    {
-                        'Article no': '701.032.50',
-                        'Package': '2',
-                        'Length': '96 cm',
-                        'Width': '47 cm',
-                        'Height': '14 cm',
-                        'Weight': '8.90 kg',
-                        'Volume per package': '61.9 l'
                     }
                 }
             },
             careinstructions: 
-                `Wipe clean with a cloth dampened in a mild cleaner.<br><br> 
+            `
+                Wipe clean with a cloth dampened in a mild cleaner.<br><br> 
                 Wipe dry with a clean cloth.<br><br>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit aliquid provident eveniet, minima voluptate, quibusdam libero perferendis ex qui illo mollitia culpa distinctio. Autem nihil fugit accusamus, maiores facilis odit.`,
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit aliquid provident eveniet, minima voluptate, quibusdam libero perferendis ex qui illo mollitia culpa distinctio. Autem nihil fugit accusamus, maiores facilis odit.
+            `,
+            goodtoknow:
+            `
+                For increased stability, re-tighten the screws about two weeks after assembly and when necessary.<br>
+                May be completed with FIXA self-adhesive floor protectors; protect the underlying surface against wear.<br>
+                This chair has been tested for home use and meets the requirements for durability and safety, set forth in the following standards: EN 12520 and EN 1022.<br>
+            `,
+            designer: 'Carina Bengs',
             materials: 
-                `Basematerial: Solid wood<br><br>
+            `
+                Basematerial: Solid wood<br><br>
                 Seat: Fibreboard<br><br>
-                All parts: Acrylic paint`,
+                All parts: Acrylic paint
+            `,
             productDocument: './product_document/INGOLF-Chair.docx',
-            category: 'chair',
+            category: 'Chairs',
             manufacture: 'INGOLF',
             model: '2017',
-            size: '28x25',
-            description: 'This is the description of product Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima?lorem ipsum dolor sit amet this is the demo for check width of container',
             quantity_of_inventory: 5,
             price: '70',
             sales: 3
         },
         {
             id: 2,
-            name: 'The shelf',
-            imageUrl: './images/products/Danish_store-Shelf-The_shelf.jpg',
-            imageUrl2: './images/products/Danish_store-Shelf-The_shelf.jpg',
-            imageUrl3: './images/products/Danish_store-Shelf-The_shelf.jpg',
-            productDocument: './product_document/Apolo-Chair-The_mordern_chair.docx',
-            category: 'shelf',
-            manufacture: 'DANISH STORE',
-            model: '2018',
-            size: '28x25',
-            description: 'This is the description of product Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima?lorem ipsum dolor sit amet this is the demo for check width of container Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima?',
-            quantity_of_inventory: 0,
-            price: '800,000',
-            sales: 11
-        },
-        {
-            id: 3,
-            name: 'The new table',
-            imageUrl: './images/products/Hoa_Phat-Table-The_new_table.jpg',
-            imageUrl2: './images/products/Hoa_Phat-Table-The_new_table.jpg',
-            imageUrl3: './images/products/Hoa_Phat-Table-The_new_table.jpg',
-            productDocument: './product_document/Apolo-Chair-The_mordern_chair.docx',
-            category: 'table',
-            manufacture: 'HOA PHAT',
-            model: '2018',
-            size: '28x25',
-            description: 'This is the description of product Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima?lorem ipsum dolor sit amet this is the demo for check width of container',
-            quantity_of_inventory: 5,
-            price: '800,000',
-            sales: 16
-        },
-        {
-            id: 4,
-            name: 'The vintage shelf',
-            imageUrl: './images/products/Danish_store-Shelf-The_vintage_shelf.jpg',
-            imageUrl2: './images/products/Danish_store-Shelf-The_vintage_shelf.jpg',
-            imageUrl3: './images/products/Danish_store-Shelf-The_vintage_shelf.jpg',
-            productDocument: './product_document/Apolo-Chair-The_mordern_chair.docx',
-            category: 'shelf',
-            manufacture: 'DANISH STORE',
-            model: '2018',
-            size: '28x25',
-            description: 'This is the description of product Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima?lorem ipsum dolor sit amet this is the demo for check width of container',
-            quantity_of_inventory: 5,
-            price: '800,000',
-            sales: 20
-        },
-        {
-            id: 5,
-            name: 'A Desk?',
-            imageUrl: './images/products/Hoa_Phat-Table-Table_table.jpg',
-            imageUrl2: './images/products/Hoa_Phat-Table-Table_table.jpg',
-            imageUrl3: './images/products/Hoa_Phat-Table-Table_table.jpg',
-            productDocument: './product_document/Apolo-Chair-The_mordern_chair.docx',
-            category: 'table',
-            manufacture: 'DURIAN',
-            model: '2016',
-            size: '28x25',
-            description: 'This is the description of product Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima?lorem ipsum dolor sit amet this is the demo for check width of container',
-            quantity_of_inventory: 5,
-            price: '800,000',
-            sales: 10
-        },
-        {
-            id: 6,
-            name: 'This is a Desk',
-            imageUrl: './images/products/Hoa_Phat-Table-Table_table.jpg',
-            imageUrl2: './images/products/Hoa_Phat-Table-Table_table.jpg',
-            imageUrl3: './images/products/Hoa_Phat-Table-Table_table.jpg',
-            productDocument: './product_document/Apolo-Chair-The_mordern_chair.docx',
-            category: 'table',
-            manufacture: 'DURIAN',
-            model: '2018',
-            size: '28x25',
-            description: 'This is the description of product Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima?lorem ipsum dolor sit amet this is the demo for check width of container',
-            quantity_of_inventory: 5,
-            price: '800,000',
-            sales: 9
-        },
-        {
-            id: 7,
-            name: 'The mordern chair',
-            imageUrl: './images/products/Apolo-Chair-The_mordern_chair.jpg',
-            imageUrl2: './images/products/Apolo-Chair-The_mordern_chair.jpg',
-            imageUrl3: './images/products/Apolo-Chair-The_mordern_chair.jpg',
-            productDocument: './product_document/Apolo-Chair-The_mordern_chair.docx',
-            category: 'chair',
-            manufacture: 'APOLO',
-            model: '2013',
-            size: '50x50',
-            description: 'This is the description of product Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum explicabo laborum dignissimos nisi, numquam adipisci aut? Fugit, provident. Quaerat saepe inventore vitae hic dolores assumenda voluptates obcaecati! Atque, minima?lorem ipsum dolor sit amet this is the demo for check width of container',
-            quantity_of_inventory: 3,
-            price: '420,000',
-            sales: 20
+            name: 'Bar stool with backrest',
+            imageUrl:
+            {
+                imageUrl: './images/products/product2/ingolf-bar_stool_with_backrest-1.jpg',
+                imageUrl2: './images/products/product2/ingolf-bar_stool_with_backrest-2.jpg',
+                imageUrl3: './images/products/product2/ingolf-bar_stool_with_backrest-3.jpg',
+                imageUrl4: './images/products/product2/ingolf-bar_stool_with_backrest-4.jpg',
+                imageUrl5: './images/products/product2/ingolf-bar_stool_with_backrest-5.jpg',
+                imageUrl6: '',
+                imageUrl7: '',
+                imageUrl8: '',
+            },
+            keyfeatures:
+            {
+                'Information of keyfeatures': 'With footrest for relaxed sitting posture.',
+                'Assembled size': 
+                {
+                    'Tested for': '100 kg',
+                    'Width': '40 cm',
+                    'Depth': '45 cm',
+                    'Height': '102 cm',
+                    'Seat width': '40 cm',
+                    'Seat depth': '40 cm',
+                    'Seat height': '74 cm'
+                },
+                'Pakage name': 'Bar stool with backrest INGOLF',
+                'Pakages': '1',
+                'Package size & weight':
+                {
+                    'Pakage 1':
+                    {
+                        'Article no': '001.217.66',
+                        'Package': '1',
+                        'Length': '106 cm',
+                        'Width': '42 cm',
+                        'Height': '13 cm',
+                        'Weight': '9.34 kg',
+                        'Volume per package': '55.4 l'
+                    }
+                }
+            },
+            careinstructions: 
+            `
+            Wipe clean with a cloth dampened in a mild cleaner.<br><br> 
+            Wipe dry with a clean cloth.<br><br>
+            `,
+            goodtoknow:
+            `
+                Suitable for bar height 110 cm.<br><br>
+                For increased stability, re-tighten the screws about two weeks after assembly and when necessary.<br><br>
+                May be completed with FIXA self-adhesive floor protectors; protect the underlying surface against wear.<br><br>
+                This bar stool has been tested for home use and meets the requirements for durability and safety, set forth in the following standards: EN 12520 and EN 1022.<br><br>
+            `,
+            designer: 'Carina Bengs',
+            materials: 
+            `
+                Basematerial: Solid wood<br><br>
+                Seat: Fibreboard<br><br>
+                All parts: Acrylic paint
+            `,
+            productDocument: './product_document/INGOLF-Bar_stool_with_backrest.docx',
+            category: 'Café & bar chairs',
+            manufacture: 'INGOLF',
+            model: '2017',
+            quantity_of_inventory: 8,
+            price: '65',
+            sales: 23
         },
     ];
 
