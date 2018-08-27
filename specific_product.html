@@ -43,20 +43,11 @@
     
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav m-auto my-navbar_item-style">
-          <li class="nav-item">
+          <li class="nav-item ">
             <a class="nav-link" href="./index.html">Home<span class="sr-only">(current)</span></a>
           </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Product
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item active" href="./product.html">All product</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">DANISH STORE</a>
-              <a class="dropdown-item" href="#">HOA PHAT</a>
-            </div>
+          <li class="nav-item active">
+            <a class="nav-link" href="./product.html">Product</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./contact.html">Contact</a>
@@ -127,7 +118,7 @@
           <p>Product name: {{specificData.name}}</p>
           <p>Category : {{specificData.category}}</p>
           <p>Model : {{specificData.model}}</p>
-          <p class="font-weight-bold">{{specificData['keyfeatures']['Information of keyfeatures']}}</p>
+          <p class="font-weight-bold" ng-bind-html= "specificData['keyfeatures']['Information of keyfeatures']"></p>
           <div>
             <h2 id='my-oos-deco' ng-if='specificData.quantity_of_inventory == 0'>Out of stock</h2>
             <h2 id='my-is-deco' ng-if='specificData.quantity_of_inventory != 0'>In stock</h2>
@@ -161,7 +152,7 @@
                 <!-- Key features information -->
                 <div>
                   <p class="font-weight-bold">-- Key features --</p>
-                  <p>{{specificData['keyfeatures']['Information of keyfeatures']}}</p>
+                  <p ng-bind-html="specificData['keyfeatures']['Information of keyfeatures']"></p>
                 </div>
                 <!-- Key features information -->
                 <!-- Assembled size -->
