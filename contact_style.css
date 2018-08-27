@@ -25,35 +25,13 @@ input[type=text], input[type=email], select, textarea  {
     resize: vertical;
     color: blue;
 }
- 
-
- 
-input[type=submit] {
- 
-    background-color: rgb(247, 189, 1);
- 
-    color: white;
- 
-    padding: 12px 20px;
- 
-    border: none;
- 
-    border-radius: 4px;
- 
-    cursor: pointer;
- 
-}
- 
-
- 
-input[type=submit]:hover {
+  
+input,[type=submit]:hover {
  
     background-color: #264912;
  
 }
- 
 
- 
 .container {
  
     border-radius: 5px;
