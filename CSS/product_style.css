@@ -106,3 +106,10 @@
     box-shadow: none;
     color:white;
 }
+.my-modal-delete-btn:hover
+{
+    background: #C2C2C2;
+    transform: scale(1.2);
+    box-shadow: none;
+    outline: none;
+}

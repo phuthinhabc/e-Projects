@@ -146,6 +146,12 @@
                       <table class="table">
                         <tbody>
                           <tr>
+                            <td></td>
+                            <td ng-repeat = "item in compareData">
+                              <button ng-click="compareDataDrop(item.id)" class="btn my-modal-delete-btn"><i class="fas fa-times"></i></button>
+                            </td>
+                          </tr>
+                          <tr>
                             <td>Name</td>
                             <td ng-repeat='item in compareData'>{{item.name}}</td>
                           </tr>

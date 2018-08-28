@@ -807,6 +807,18 @@ myApp.controller('myAppController',function($scope, $sessionStorage){
         }
     }
 
+    // Function click for drop item in compareData array
+    $scope.compareDataDrop = function(idItem)
+    {
+        for(let i in $scope.compareData)
+        {
+            if($scope.compareData[i]["id"] == idItem)
+            {
+                $scope.compareData.splice(i,1);
+            }
+        }
+    }
+
 
 
 
