@@ -123,10 +123,9 @@
             <h2 id='my-oos-deco' ng-if='specificData.quantity_of_inventory == 0'>Out of stock</h2>
             <h2 id='my-is-deco' ng-if='specificData.quantity_of_inventory != 0'>In stock</h2>
           </div>
-          <div class="row text-center d-block py-2">
+          <div class="text-center d-block py-2">
             <button class="my-btn"><span class="my-inner-btn"><span><i class="fas fa-cart-plus"></i></span><span>Add to cart</span></button>
-            <button ng-click="clickForCompare(specificData.id)" class="my-btn mx-3"><span class="my-inner-btn">Add to compare</span></button>
-            <button ng-href="./compare.html" class="my-btn"><span class="my-inner-btn">View comparison</span></button>
+            <button ng-click="clickForCompare(specificData.id);checkNavigate()" class="my-btn mx-3"><span class="my-inner-btn">Add to compare</span></button>
           </div>
         </div> 
         <!-- Product details -->

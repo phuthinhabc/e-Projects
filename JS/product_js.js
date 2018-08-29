@@ -842,6 +842,23 @@ myApp.controller('myAppController',function($scope, $sessionStorage){
         }
     }
 
+    //SPECIFIC_PRODUCT
+
+    $scope.checkNavigate= function()
+    {
+        if ($scope.compareDatalength >= 2)
+        {
+            if(confirm("Added to comparison. Do you want to navigate to comparison page?") == true)
+            {
+                window.location.href = "./compare.html"
+            }
+            else
+            {}
+        }
+        else
+        {}
+    }
+
 
 
 
@@ -1052,7 +1069,7 @@ myApp.controller('myAppController',function($scope, $sessionStorage){
     }
     $scope.clickForTest = function()
     {
-        console.log($sessionStorage.specificStoraged);
+        console.log($scope.compareData.length);
     }
     $scope.clickForReset = function()
     {
