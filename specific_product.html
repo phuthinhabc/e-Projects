@@ -76,29 +76,29 @@
               <img class="col-md-2 img-thumbnail" ng-class="{'d-none' : specificData['imageUrl']['imageUrl8'] == ''}" ng-src="{{specificData['imageUrl']['imageUrl8']}}" alt="First slide" data-target="#carouselIndicators" data-slide-to="7">
             </ol>
             <div class="carousel-inner">
-              <div class="carousel-item active">
+              <div ng-if="specificData['imageUrl']['imageUrl'] != ''" class="carousel-item active">
                 <img class="img-thumbnail d-block w-100" ng-src="{{specificData['imageUrl']['imageUrl']}}" alt="First slide">
               </div>
-              <div class="carousel-item">
+              <div ng-if="specificData['imageUrl']['imageUrl2'] != ''" class="carousel-item">
                 <img class="img-thumbnail d-block w-100" ng-src="{{specificData['imageUrl']['imageUrl2']}}" alt="Second slide">
               </div>
-              <div class="carousel-item">
+              <div ng-if="specificData['imageUrl']['imageUrl3'] != ''" class="carousel-item">
                 <img class="img-thumbnail d-block w-100" ng-src="{{specificData['imageUrl']['imageUrl3']}}" alt="Third slide">
               </div>
-              <div class="carousel-item">
-                <img class="img-thumbnail d-block w-100" ng-src="{{specificData['imageUrl']['imageUrl4']}}" alt="Third slide">
+              <div ng-if="specificData['imageUrl']['imageUrl4'] != ''" class="carousel-item">
+                <img class="img-thumbnail d-block w-100" ng-src="{{specificData['imageUrl']['imageUrl4']}}" alt="Fourth slide">
               </div>
-              <div class="carousel-item">
-                <img class="img-thumbnail d-block w-100" ng-src="{{specificData['imageUrl']['imageUrl5']}}" alt="Third slide">
+              <div ng-if="specificData['imageUrl']['imageUrl5'] != ''" class="carousel-item">
+                <img class="img-thumbnail d-block w-100" ng-src="{{specificData['imageUrl']['imageUrl5']}}" alt="Fifth slide">
               </div>
-              <div class="carousel-item">
-                <img class="img-thumbnail d-block w-100" ng-src="{{specificData['imageUrl']['imageUrl6']}}" alt="Third slide">
+              <div ng-if="specificData['imageUrl']['imageUrl6'] != ''" class="carousel-item">
+                <img class="img-thumbnail d-block w-100" ng-src="{{specificData['imageUrl']['imageUrl6']}}" alt="Sixth slide">
               </div>
-              <div class="carousel-item">
-                <img class="img-thumbnail d-block w-100" ng-src="{{specificData['imageUrl']['imageUrl7']}}" alt="Third slide">
+              <div ng-if="specificData['imageUrl']['imageUrl7'] != ''" class="carousel-item">
+                <img class="img-thumbnail d-block w-100" ng-src="{{specificData['imageUrl']['imageUrl7']}}" alt="Seventh slide">
               </div>
-              <div class="carousel-item">
-                <img class="img-thumbnail d-block w-100" ng-src="{{specificData['imageUrl']['imageUrl8']}}" alt="Third slide">
+              <div ng-if="specificData['imageUrl']['imageUrl8'] != ''" class="carousel-item">
+                <img class="img-thumbnail d-block w-100" ng-src="{{specificData['imageUrl']['imageUrl8']}}" alt="Eighth slide">
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
@@ -124,9 +124,9 @@
             <h2 id='my-is-deco' ng-if='specificData.quantity_of_inventory != 0'>In stock</h2>
           </div>
           <div class="row text-center d-block py-2">
-            <button class="my-btn"><span class="my-inner-btn"><span>Add to cart</span></button>
-            <button class="my-btn mx-3"><span class="my-inner-btn">Click</span></button>
-            <button class="my-btn"><span class="my-inner-btn">Click</span></button>
+            <button class="my-btn"><span class="my-inner-btn"><span><i class="fas fa-cart-plus"></i></span><span>Add to cart</span></button>
+            <button ng-click="clickForCompare(specificData.id)" class="my-btn mx-3"><span class="my-inner-btn">Add to compare</span></button>
+            <button ng-href="./compare.html" class="my-btn"><span class="my-inner-btn">View comparison</span></button>
           </div>
         </div> 
         <!-- Product details -->

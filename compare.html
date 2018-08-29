@@ -90,11 +90,11 @@
                 <td ng-repeat='item in compareData'>{{item.price}}</td>
             </tr>
             <tr>
-                <td></td>
-                <td ng-repeat='item in compareData'>
-                    <p id="my-oos-deco" ng-if='item.quantity_of_inventory == 0'>Out of stock</p>
-                    <p id="my-is-deco" ng-if='item.quantity_of_inventory != 0'>In stock</p>
-                </td>
+              <td></td>
+              <td ng-repeat='item in compareData'>
+                  <p id="my-oos-deco" ng-if='item.quantity_of_inventory == 0'>Out of stock</p>
+                  <p id="my-is-deco" ng-if='item.quantity_of_inventory != 0'>In stock</p>
+              </td>
             </tr>
         </tbody>
     </table>

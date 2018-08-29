@@ -766,31 +766,45 @@ myApp.controller('myAppController',function($scope, $sessionStorage){
     // Function for 'Click for compare' button (click for add item into compareData array) 
     $scope.clickForCompare = function(itemId)
     {
-        $scope.counterCompare = 0;
-        for(let i in $scope.compareData)
+        if ($scope.compareDatalength < 6)
         {
-            if(itemId == $scope.compareData[i].id)
+            $scope.counterCompare = 0;
+            for(let i in $scope.compareData)
             {
-                $scope.counterCompare++;
-            }
-        }
-        if($scope.counterCompare == 0)
-        {
-            for(let i in $scope.data)
-            {
-                if(itemId == $scope.data[i].id)
+                if(itemId == $scope.compareData[i].id)
                 {
-                    $scope.compareData.push($scope.data[i]);
-                    $scope.compareDatalength = $scope.compareData.length;
-                    $sessionStorage.dataStoraged = $scope.compareData;
-                    $scope.disableCompareButton = false;
+                    $scope.counterCompare++;
                 }
+            }
+            if($scope.counterCompare == 0)
+            {
+                for(let i in $scope.data)
+                {
+                    if(itemId == $scope.data[i].id)
+                    {
+                        $scope.compareData.push($scope.data[i]);
+                        $scope.compareDatalength = $scope.compareData.length;
+                        $sessionStorage.dataStoraged = $scope.compareData;
+                        $scope.disableCompareButton = false;
+                    }
+                }
+            }
+            else
+            {
+                $scope.counterCompare = 0;
+                return false;
             }
         }
         else
         {
-            $scope.counterCompare = 0;
-            return false;
+            if (confirm("Maximun comparison is 6. Do you want to reset comparison zone?") == true)
+            {
+                $scope.compareDataReset();   
+                alert("Reset completed");
+            }
+            else
+            {
+            }
         }
     }
 
@@ -816,6 +830,15 @@ myApp.controller('myAppController',function($scope, $sessionStorage){
             {
                 $scope.compareData.splice(i,1);
             }
+        }
+        $scope.compareDatalength = $scope.compareData.length;
+        if($scope.compareDatalength == 0)
+        {
+            $scope.disableCompareButton = true;
+        }
+        else
+        {
+            $scope.disableCompareButton = false;
         }
     }
 

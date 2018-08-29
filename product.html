@@ -164,12 +164,16 @@
                             <td ng-repeat='item in compareData'>{{item.category}}</td>
                           </tr>
                           <tr>
+                            <td>Price</td>
+                            <td ng-repeat='item in compareData'>${{item.price}}</td>
+                          </tr>
+                          <tr>
                             <td>Manufacture</td>
                             <td ng-repeat='item in compareData'>{{item.manufacture}}</td>
                           </tr>
                           <tr>
                             <td>Model</td>
-                            <td ng-repeat='item in compareData'>{{item.model}}</td>
+                            <td ng-repeat="item in compareData">{{item.model}}</td>
                           </tr>
                         </tbody>
                       </table>
