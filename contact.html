@@ -10,6 +10,7 @@
 
     <!-- My Contact CSS -->
     <link rel="stylesheet" href="./CSS/contact_style.css">
+	
 
     <!-- Angular JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"></script>
@@ -66,7 +67,7 @@
         <div class="col-md-6">
           <form onSubmit="return check()">
             <label for="fname">First Name:</label>
-            <input type="text" id="fname" name="firstname" placeholder="Enter your name.." required autofocus>
+            <input type="text" id="fname" name="firstname" placeholder="Enter your name.." required autofocus pattern="[a-zA-Z ]{3,30}" >
   
             <label for="lname">Last Name:</label>
             <input type="text" id="lname" name="lastname" placeholder="Enter your last name.." required>
@@ -87,10 +88,10 @@
   			<input type="text" id="captcha" disabled/><br/><br/>
 			<input type="text" id="inputText"/><br/><br/>
 	
-	       <input type="button" value="Refresh" onClick="generateCaptcha()" class="btn btn-danger">
+	       <input type="button" value="Refresh" onClick="generateCaptcha()" class="btn btn-warning">
           
         
-            <input type="submit" value="Submit" class="btn-btn-warning" >
+            <input type="submit" value="Submit" class="btn btn-info" >
             <div align="right" class="blink_me" ><a class="blink_me" target="_blank" href="mailto:dpt2909@gmail.com">Send an email to us</a></div>
           </form>
         </div>

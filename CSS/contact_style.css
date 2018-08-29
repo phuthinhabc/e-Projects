@@ -24,12 +24,6 @@ input[type=text], input[type=email], select, textarea  {
     color: blue;
 }
   
-input,[type=submit]:hover {
- 
-    background-color: white;
- 
-}
-
 .container {
  
     border-radius: 5px;
@@ -53,6 +47,7 @@ p {
 }
 .blink_me {
     animation: blinker 1s linear infinite;
+	color: #630;
   }
   
   @keyframes blinker {

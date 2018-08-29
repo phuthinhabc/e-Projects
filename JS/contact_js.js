@@ -27,3 +27,4 @@ function check(){
         alert("Wrong captcha");
     }
 }	
+
