@@ -58,9 +58,9 @@ p {
   h2 {
       color: black;
   }
-  form {
-      color: cornflowerblue;
-  }
+
   div {
       color: yellowgreen;
   }
+option {
+	color:red;

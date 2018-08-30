@@ -66,11 +66,11 @@
         <!-- Form zone -->
         <div class="col-md-6">
           <form onSubmit="return check()">
-            <label for="fname">First Name:</label>
-            <input type="text" id="fname" name="firstname" placeholder="Enter your name.." required autofocus pattern="[a-zA-Z ]{3,30}" >
+            <label for="fname">First Name ( Your name shouldn't contain number or special character )</label>
+            <input type="text" id="fname" name="firstname" placeholder="Enter your name.." autofocus pattern="[a-zA-Z ]{3,30}" >
   
-            <label for="lname">Last Name:</label>
-            <input type="text" id="lname" name="lastname" placeholder="Enter your last name.." required>
+            <label for="lname">Last Name ( Your last name shouldn't contain number or special character )</label>
+            <input type="text" id="lname" name="lastname" placeholder="Enter your last name.." pattern="[a-zA-Z ]{3,30}" required>
   
             <label for="email">Email:</label>
             <input type="email" id="lname2" name="lname" placeholder="Enter your email" required>
@@ -88,10 +88,10 @@
   			<input type="text" id="captcha" disabled/><br/><br/>
 			<input type="text" id="inputText"/><br/><br/>
 	
-	       <input type="button" value="Refresh" onClick="generateCaptcha()" class="btn btn-warning">
+	       <input type="button" value="Refresh" onClick="generateCaptcha()" class="btn btn-danger">
           
         
-            <input type="submit" value="Submit" class="btn btn-info" >
+            <input type="submit" value="Submit" class="btn btn-primary" >
             <div align="right" class="blink_me" ><a class="blink_me" target="_blank" href="mailto:dpt2909@gmail.com">Send an email to us</a></div>
           </form>
         </div>
