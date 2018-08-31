@@ -21,7 +21,6 @@ input[type=text], input[type=email], select, textarea  {
     margin-bottom: 16px;
  
     resize: vertical;
-    color: blue;
 }
   
 .container {
@@ -63,4 +62,25 @@ p {
       color: yellowgreen;
   }
 option {
-	color:red;
+    color:red;
+}
+label
+{
+    color: black;
+}
+#my-refresh-btn, #my-submit-btn
+{
+    background: #817C7A;
+    color: white;
+    width: 150px;
+    border-radius: 0;
+}
+#my-refresh-btn:hover, #my-submit-btn:hover
+{
+    background: #5F5C5A;
+}
+#my-refresh-btn:active, #my-submit-btn:active
+{
+    transform: scale(0.97);
+}
+
