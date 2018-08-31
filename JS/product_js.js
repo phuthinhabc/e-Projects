@@ -734,6 +734,305 @@ myApp.controller('myAppController',function($scope, $sessionStorage){
             price: '25',
             sales: 30,
         },
+        {
+            id: 10,
+            name: 'Folding chair',
+            imageUrl:
+            {
+                imageUrl:  './images/products/product10/KALLAX-folding_chair-1.jpg',
+                imageUrl2: './images/products/product10/KALLAX-folding_chair-2.jpg',
+                imageUrl3: './images/products/product10/KALLAX-folding_chair-3.jpg',
+                imageUrl4: './images/products/product10/KALLAX-folding_chair-4.jpg',
+                imageUrl5: './images/products/product10/KALLAX-folding_chair-5.jpg',
+                imageUrl6: './images/products/product10/KALLAX-folding_chair-6.jpg',
+                imageUrl7: './images/products/product10/KALLAX-folding_chair-7.jpg',
+                imageUrl8: './images/products/product10/KALLAX-folding_chair-8.jpg',
+            },
+            keyfeatures:
+            {
+                'Information of keyfeatures': 
+                `
+                You can fold the chair, so it takes less space when you're not using it.
+                `,
+                'Assembled size': 
+                {
+                    'Tested for': '100 kg',
+                    'Width': '44 cm',
+                    'Depth': '51 cm',
+                    'Height': '77 cm',
+                    'Seat width': '38 cm',
+                    'Seat depth': '33 cm',
+                    'Seat height': '46 cm',
+                },
+                'Pakage name': 'Folding chair KALLAX',
+                'Pakages': '1',
+                'Package size & weight':
+                {
+                    'Pakage 1':
+                    {
+                        'Article no':	'648.331.08',
+                        'Package ':	'1',
+                        'Length':	'89 cm',
+                        'Width':	'44 cm',
+                        'Height':	'9 cm',
+                        'Weight':	'3.20 kg',
+                        'Volume per package':	'35.2 l',
+                    },
+                }
+            },
+            careinstructions: 
+            `
+                Wipe clean with a cloth dampened in a mild cleaner.<br><br>
+                Wipe dry with a clean cloth.<br><br>
+            `,
+            goodtoknow:
+            `
+                May be completed with FIXA self-adhesive floor protectors; protect the underlying surface against wear.<br><br>
+                This chair has been tested for home use and meets the requirements for durability and safety, set forth in the following standards: EN 12520 and EN 1022.<br><br>
+            `,
+            designer: 'Lars Norinder',
+            materials: 
+            `
+                Solid beech, Clear acrylic lacquer
+            `,
+            productDocument: './product_document/KALLAX-folding_chair.docx',
+            category: 'Chairs',
+            manufacture: 'KALLAX',
+            model: '2017',
+            quantity_of_inventory: 20,
+            price: '13',
+            sales: 10,
+        },
+        {
+            id: 11,
+            name: 'Extendable table',
+            imageUrl:
+            {
+                imageUrl:  './images/products/product11/BILLY-extendable_table-1.jpg',
+                imageUrl2: './images/products/product11/BILLY-extendable_table-2.jpg',
+                imageUrl3: './images/products/product11/BILLY-extendable_table-3.jpg',
+                imageUrl4: './images/products/product11/BILLY-extendable_table-4.jpg',
+                imageUrl5: './images/products/product11/BILLY-extendable_table-5.jpg',
+                imageUrl6: './images/products/product11/BILLY-extendable_table-6.jpg',
+                imageUrl7: '',
+                imageUrl8: '',
+            },
+            keyfeatures:
+            {
+                'Information of keyfeatures': 
+                `
+                    2 pull-out leaves included.
+                `,
+                'Assembled size': 
+                {
+                    'Length': '129 cm',
+                    'Min. length': '90 cm',
+                    'Max. length': '168 cm',
+                    'Width': '90 cm',
+                    'Height': '74 cm',
+                },
+                'Pakage name': 'Extendable table BILLY',
+                'Pakages': '1',
+                'Package size & weight':
+                {
+                    'Pakage 1':
+                    {
+                        'Article no':	'101.168.11',
+                        'Package ':	'1',
+                        'Length':	'115 cm',
+                        'Width':	'92 cm',
+                        'Height':	'7 cm',
+                        'Weight':	'30.5 kg',
+                        'Volume per package':	'69.5 l',
+                    },
+                }
+            },
+            careinstructions: 
+            `
+                Wipe clean with a cloth dampened in a mild cleaner.<br><br>
+                Wipe dry with a clean cloth.<br><br>
+            `,
+            goodtoknow:
+            `
+                For increased stability, re-tighten the screws about two weeks after assembly and when necessary.<br><br>
+                Combines with other furniture in the BJURSTA series.<br><br>
+                Seats 2-4.<br><br>
+            `,
+            designer: 'Tord Björklund',
+            materials: 
+            `
+                Table top/ Extension leaf: Particleboard, Oak veneer, Oak veneer, Tinted clear acrylic lacquer<br><br>
+                Underframe: Solid pine, Oak veneer, Tinted clear acrylic lacquer<br><br>
+                Leg: Particleboard, Oak veneer, Tinted clear acrylic lacquer<br><br>
+                Extension rail: Solid birch<br><br>
+            `,
+            productDocument: './product_document/KALLAX-folding_chair.docx',
+            category: 'Tables',
+            manufacture: 'BILLY',
+            model: '2016',
+            quantity_of_inventory: 19,
+            price: '130',
+            sales: 5,
+        },
+        {
+            id: 12,
+            name: 'Extendable table',
+            imageUrl:
+            {
+                imageUrl:  './images/products/product12/STOLPA-extendable-table-1.jpg',
+                imageUrl2: './images/products/product12/STOLPA-extendable-table-2.jpg',
+                imageUrl3: './images/products/product12/STOLPA-extendable-table-3.jpg',
+                imageUrl4: './images/products/product12/STOLPA-extendable-table-4.jpg',
+                imageUrl5: './images/products/product12/STOLPA-extendable-table-5.jpg',
+                imageUrl6: './images/products/product12/STOLPA-extendable-table-6.jpg',
+                imageUrl7: './images/products/product12/STOLPA-extendable-table-7.jpg',
+                imageUrl8: '',
+            },
+            keyfeatures:
+            {
+                'Information of keyfeatures': 
+                `
+                    2 extension leaves included.
+                `,
+                'Assembled size': 
+                {
+                    'Length': '180 cm',
+                    'Min. length': '140 cm',
+                    'Max. length': '220 cm',
+                    'Width': '84 cm',
+                    'Height': '74 cm',
+                },
+                'Pakage name': 'Extendable table STOLPA',
+                'Pakages': '1',
+                'Package size & weight':
+                {
+                    'Pakage 1':
+                    {
+                        'Article no':	'801.162.66',
+                        'Package ':	'1/2',
+                        'Length':	'87 cm',
+                        'Width':	'83 cm',
+                        'Height':	'8 cm',
+                        'Weight':	'29.00 kg',
+                        'Volume per package':	'58.8 l',
+                    },
+                    'Pakage 2':
+                    {
+                        'Article no':	'801.162.66',
+                        'Package ':	'2/2',
+                        'Length':	'152 cm',
+                        'Width':	'28 cm',
+                        'Height':	'7 cm',
+                        'Weight':	'13.00 kg',
+                        'Volume per package':	'29.8 l',
+                    },
+                }
+            },
+            careinstructions: 
+            `
+                Wipe clean with a cloth dampened in a mild cleaner.<br><br>
+                Wipe dry with a clean cloth.<br><br>
+            `,
+            goodtoknow:
+            `
+                For increased stability, re-tighten the screws about two weeks after assembly and when necessary.<br><br>
+                Seats 4-6.<br><br>
+            `,
+            designer: 'Tord Björklund',
+            materials: 
+            `
+                Table top/ Extension leaf: Particleboard, Oak veneer, Oak veneer, Tinted clear acrylic lacquer<br><br>
+                Underframe: Solid pine, Oak veneer, Tinted clear acrylic lacquer<br><br>
+                Leg: Particleboard, Oak veneer, Tinted clear acrylic lacquer<br><br>
+                Rail/ Extension rail: Solid wood<br><br>
+            `,
+            productDocument: './product_document/STOLPA-extendable_table.docx',
+            category: 'Tables',
+            manufacture: 'STOLPA',
+            model: '2017',
+            quantity_of_inventory: 22,
+            price: '150',
+            sales: 8,
+        },
+        {
+            id: 13,
+            name: 'Shelf',
+            imageUrl:
+            {
+                imageUrl:  './images/products/product13/SONGESAND-shelf.jpg',
+                imageUrl2: '',
+                imageUrl3: '',
+                imageUrl4: '',
+                imageUrl5: '',
+                imageUrl6: '',
+                imageUrl7: '',
+                imageUrl8: '',
+            },
+            keyfeatures:
+            {
+                'Information of keyfeatures': 
+                `
+                    Untreated wood; can be treated with oil, wax or glazing paint for increased durability and a personal touch.
+                `,
+                'Assembled size': 
+                {
+                    'Width': '59.0 cm',
+                    'Depth': '26.0 cm',
+                    'Thickness': '24.5 cm',
+                    'Max. load': '10 kg',
+                },
+                'Pakage name': 'Shelf SONGESAND',
+                'Pakages': '2',
+                'Package size & weight':
+                {
+                    'Shelf SONGESAND':
+                    {
+                        'Article no':	'501.787.03',
+                        'Package ':	'1',
+                        'Length':	'59 cm',
+                        'Width':	'24 cm',
+                        'Height':	'2 cm',
+                        'Weight':	'1.40 kg',
+                        'Volume per package':	'2.3 l',
+                    },
+                    'Bracket SONGESAND':
+                    {
+                        'Article no':	'766.960.09',
+                        'Package ':	'2',
+                        'Length':	'23 cm',
+                        'Width':	'19 cm',
+                        'Height':	'3 cm',
+                        'Weight':	'0.20 kg',
+                        'Volume per package':	'1.4 l',
+                    },
+                }
+            },
+            careinstructions: 
+            `
+                Wipe clean with a cloth dampened in a mild cleaner.<br><br>
+                Wipe dry with a clean cloth.<br><br>
+                Stains can be removed by using an eraser or fine sandpaper.<br><br>
+            `,
+            goodtoknow:
+            `
+            
+            `,
+            designer: 'IKEA of Sweden/Jon Karlsson',
+            materials: 
+            `
+                <b>Bracket</b><br>
+                Solid birch<br><br>
+                <b>Shelf</b><br>
+                Particleboard, Foil<br><br>
+            `,
+            productDocument: './product_document/SONGESAND-shelf.docx',
+            category: 'Shelf',
+            manufacture: 'SONGESAND',
+            model: '2016',
+            quantity_of_inventory: 0,
+            price: '5.90',
+            sales: 8,
+        },
     ];
 
 
