@@ -1,18 +1,18 @@
 let myApp = angular.module('myApp',['ngAnimate','ngStorage','ngSanitize']);
-myApp.controller('myAppController',function($scope, $sessionStorage){
+myApp.controller('myAppController',function($scope, $localStorage){
 
 
 
 
 
-    // Create variable $sessionStorage.dataStoraged, run only one time
-    if ($sessionStorage.onlyOneTime == 0)
+    // Create variable $localStorage.dataStoraged, run only one time
+    if ($localStorage.onlyOneTime == 0)
     {}
     else
     {
-        $sessionStorage.specificStoraged ={};
-        $sessionStorage.dataStoraged =[];
-        $sessionStorage.onlyOneTime = 0;
+        $localStorage.specificStoraged ={};
+        $localStorage.dataStoraged =[];
+        $localStorage.onlyOneTime = 0;
     }
 
 
@@ -1041,9 +1041,9 @@ myApp.controller('myAppController',function($scope, $sessionStorage){
 
     // // // // // STORAGE DATA
 
-    // Get data for compareData array from sessionStorage.dataStoraged
-    $scope.compareData = $sessionStorage.dataStoraged;
-    $scope.specificData = $sessionStorage.specificStoraged;
+    // Get data for compareData array from localStorage.dataStoraged
+    $scope.compareData = $localStorage.dataStoraged;
+    $scope.specificData = $localStorage.specificStoraged;
 
 
 
@@ -1083,7 +1083,7 @@ myApp.controller('myAppController',function($scope, $sessionStorage){
                     {
                         $scope.compareData.push($scope.data[i]);
                         $scope.compareDatalength = $scope.compareData.length;
-                        $sessionStorage.dataStoraged = $scope.compareData;
+                        $localStorage.dataStoraged = $scope.compareData;
                         $scope.disableCompareButton = false;
                     }
                 }
@@ -1113,7 +1113,7 @@ myApp.controller('myAppController',function($scope, $sessionStorage){
         let confirmValue = confirm('Are you sure?');
         if (confirmValue == true)
         {
-            $sessionStorage.dataStoraged=[];
+            $localStorage.dataStoraged=[];
             $scope.compareData = [];
             $scope.compareDatalength = 0;
             $scope.disableCompareButton = true;
@@ -1347,12 +1347,12 @@ myApp.controller('myAppController',function($scope, $sessionStorage){
 
     $scope.specificItemFunction = function(idItem)
     {
-        $sessionStorage.specificStoraged = {};
+        $localStorage.specificStoraged = {};
         for (let i in $scope.data)
         {
             if($scope.data[i]['id'] == idItem)
             {
-                $sessionStorage.specificStoraged = $scope.data[i];
+                $localStorage.specificStoraged = $scope.data[i];
             }
         }
     }
@@ -1372,6 +1372,6 @@ myApp.controller('myAppController',function($scope, $sessionStorage){
     }
     $scope.clickForReset = function()
     {
-        $sessionStorage.$reset();
+        $localStorage.$reset();
     }
 });

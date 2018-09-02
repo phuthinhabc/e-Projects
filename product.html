@@ -230,7 +230,7 @@
                 <div ng-repeat="(key,value) in item['keyfeatures']['Assembled size']">
                   <p>{{key}}: {{value}}</p>
                 </div>
-                <a ng-click='specificItemFunction(item.id)' href="./specific_product.html" class="btn my-button-overlay my-2">
+                <a ng-mouseenter="specificItemFunction(item.id)" ng-click='specificItemFunction(item.id)' href="./specific_product.html" class="btn my-button-overlay my-2">
                   <span>Click for more</span>
                 </a>
                 <br>
