@@ -1033,6 +1033,154 @@ myApp.controller('myAppController',function($scope, $localStorage){
             price: '5.90',
             sales: 8,
         },
+        {
+            id: 14,
+            name: 'Bookcase',
+            imageUrl:
+            {
+                imageUrl:  './images/products/product14/HEMNES-bookcase-1.jpg',
+                imageUrl2: './images/products/product14/HEMNES-bookcase-2.jpg',
+                imageUrl3: './images/products/product14/HEMNES-bookcase-3.jpg',
+                imageUrl4: './images/products/product14/HEMNES-bookcase-4.jpg',
+                imageUrl5: './images/products/product14/HEMNES-bookcase-5.jpg',
+                imageUrl6: '',
+                imageUrl7: '',
+                imageUrl8: '',
+            },
+            keyfeatures:
+            {
+                'Information of keyfeatures': 
+                `
+                    Cornice and plinth rail help create a uniform expression when two or more units are connected together.
+                `,
+                'Assembled size': 
+                {
+                    'Width': '96 cm',
+                    'Depth': '37 cm',
+                    'Height': '214 cm',
+                    'Max. load/shelf': '35 kg',
+                },
+                'Pakage name': 'Bookcase HEMNES',
+                'Pakages': '2',
+                'Package size & weight':
+                {
+                    'Package 1':
+                    {
+                        'Article no':	'004.180.22',
+                        'Package ':	'1/2',
+                        'Length':	'221 cm',
+                        'Width':	'37 cm',
+                        'Height':	'9 cm',
+                        'Weight':	'37.80 kg',
+                        'Volume per package':	'76.5 l',
+                    },
+                    'Package 2':
+                    {
+                        'Article no':	'004.180.22',
+                        'Package ':	'2/2',
+                        'Length':	'89 cm',
+                        'Width':	'33 cm',
+                        'Height':	'12 cm',
+                        'Weight':	'20.50 kg',
+                        'Volume per package':	'35.4 l',
+                    },
+                }
+            },
+            careinstructions: 
+            `
+                Wipe clean with a cloth dampened in a mild cleaner.<br><br>
+                Wipe dry with a clean cloth.<br><br>
+            `,
+            goodtoknow:
+            `
+                This furniture must be fixed to the wall with the enclosed wall fastener.<br><br>
+                Different wall materials require different types of fixing devices. Use fixing devices suitable for the walls in your home, sold separately.<br><br>
+                Two people are required to do the assembly.<br><br>
+                May be completed with HEMNES doors 44x198 cm.<br><br>
+            `,
+            designer: 'Carina Bengs',
+            materials: 
+            `
+                Top panel: Particleboard, Polyester paint<br><br>
+                Side panel: Particleboard, Melamine foil, ABS plastic, Polyester paint<br><br>
+                Shelf: Solid pine, Fibreboard, ABS plastic, Polyester paint<br><br>
+                Back/ Other parts: Fibreboard, Polyester paint<br><br>
+                Bottom panel: Particleboard, Foil, Polyester paint<br><br>
+            `,
+            productDocument: './product_document/HEMNES-Bookcase.docx',
+            category: 'Bookcase',
+            manufacture: 'HEMNES',
+            model: '2017',
+            quantity_of_inventory: 5,
+            price: '170',
+            sales: 12,
+        },
+        {
+            id: 15,
+            name: 'LED USB lamp',
+            imageUrl:
+            {
+                imageUrl:  './images/products/product15/FOTO-led_usb_lamp-1.jpg',
+                imageUrl2: './images/products/product15/FOTO-led_usb_lamp-2.jpg',
+                imageUrl3: './images/products/product15/FOTO-led_usb_lamp-3.jpg',
+                imageUrl4: '',
+                imageUrl5: '',
+                imageUrl6: '',
+                imageUrl7: '',
+                imageUrl8: '',
+            },
+            keyfeatures:
+            {
+                'Information of keyfeatures': 
+                `
+                    You can easily direct the light where you want it because the lamp arm and head are adjustable.
+                `,
+                'Assembled size': 
+                {
+                    'Luminous flux': '10 lm',
+                    'Power': '0.3 W',
+                },
+                'Pakage name': 'LED USB lamp FOTO',
+                'Pakages': '2',
+                'Package size & weight':
+                {
+                    'Package 1':
+                    {
+                        'Article no':	'702.912.32',
+                        'Package ':	'1',
+                        'Length':	'8 cm',
+                        'Width':	'7 cm',
+                        'Height':	'2 cm',
+                        'Weight':	'0.04 kg',
+                        'Volume per package':	'0.1 l',
+                    }
+                }
+            },
+            careinstructions: 
+            `
+            `,
+            goodtoknow:
+            `
+                LED life time approx. 25.000 hours.<br><br>
+                Built-in LED light source.<br><br>
+                Light colour: warm white (2700 Kelvin).<br><br>
+                This product bears the CE mark.<br><br>
+            `,
+            designer: 'A Efverlund/J Jelinek',
+            materials: 
+            `
+                Shades/ Lens holder/ Reflector: ABS plastic<br><br>
+                Optical lens: Acrylic plastic<br><br>
+                Arm: Steel, Paint<br><br>                
+            `,
+            productDocument: './product_document/FOTO-LED_USB_lamp.docx',
+            category: 'Lamp',
+            manufacture: 'FOTO',
+            model: '2015',
+            quantity_of_inventory: 50,
+            price: '2',
+            sales: 40,
+        },
     ];
 
 
@@ -1145,6 +1293,7 @@ myApp.controller('myAppController',function($scope, $localStorage){
 
     $scope.checkNavigate= function()
     {
+        alert("Added");
         if ($scope.compareDatalength >= 2)
         {
             if(confirm("Added to comparison. Do you want to navigate to comparison page?") == true)
