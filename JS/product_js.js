@@ -167,13 +167,13 @@ myApp.controller('myAppController',function($scope, $localStorage){
             name: 'Drop-leaf table',
             imageUrl:
             {
-                imageUrl:  './images/products/product3/ingatorp-drop_leaf_table-1.jpg',
-                imageUrl2: './images/products/product3/ingatorp-drop_leaf_table-2.jpg',
-                imageUrl3: './images/products/product3/ingatorp-drop_leaf_table-3.jpg',
-                imageUrl4: './images/products/product3/ingatorp-drop_leaf_table-4.jpg',
-                imageUrl5: './images/products/product3/ingatorp-drop_leaf_table-5.jpg',
-                imageUrl6: './images/products/product3/ingatorp-drop_leaf_table-6.jpg',
-                imageUrl7: './images/products/product3/ingatorp-drop_leaf_table-7.jpg',
+                imageUrl:  './images/products/product3/KALLAX-drop_leaf_table-1.jpg',
+                imageUrl2: './images/products/product3/KALLAX-drop_leaf_table-2.jpg',
+                imageUrl3: './images/products/product3/KALLAX-drop_leaf_table-3.jpg',
+                imageUrl4: './images/products/product3/KALLAX-drop_leaf_table-4.jpg',
+                imageUrl5: './images/products/product3/KALLAX-drop_leaf_table-5.jpg',
+                imageUrl6: './images/products/product3/KALLAX-drop_leaf_table-6.jpg',
+                imageUrl7: './images/products/product3/KALLAX-drop_leaf_table-7.jpg',
                 imageUrl8: '',
             },
             keyfeatures:
@@ -190,7 +190,7 @@ myApp.controller('myAppController',function($scope, $localStorage){
                     'Width': '78 cm',
                     'Height': '74 cm',
                 },
-                'Pakage name': 'Drop-leaf table INGATORP',
+                'Pakage name': 'Drop-leaf table KALLAX',
                 'Pakages': '1',
                 'Package size & weight':
                 {
@@ -228,9 +228,9 @@ myApp.controller('myAppController',function($scope, $localStorage){
                 Drawer side/ Drawer back: Solid pine<br><br>
                 Drawer bottom: Pattern printed fibreboard<br><br>
             `,
-            productDocument: './product_document/INGATORP-drop_leaf_table.docx',
+            productDocument: './product_document/KALLAX-drop_leaf_table.docx',
             category: 'Tables',
-            manufacture: 'INGATORP',
+            manufacture: 'KALLAX',
             model: '2015',
             quantity_of_inventory: 10,
             price: '100',
@@ -449,14 +449,14 @@ myApp.controller('myAppController',function($scope, $localStorage){
             name: 'Bed frame',
             imageUrl:
             {
-                imageUrl:  './images/products/product7/HEMNES-bed_frame-1.jpg',
-                imageUrl2: './images/products/product7/HEMNES-bed_frame-2.jpg',
-                imageUrl3: './images/products/product7/HEMNES-bed_frame-3.jpg',
-                imageUrl4: './images/products/product7/HEMNES-bed_frame-4.jpg',
-                imageUrl5: './images/products/product7/HEMNES-bed_frame-5.jpg',
-                imageUrl6: './images/products/product7/HEMNES-bed_frame-6.jpg',
-                imageUrl7: './images/products/product7/HEMNES-bed_frame-7.jpg',
-                imageUrl8: './images/products/product7/HEMNES-bed_frame-8.jpg',
+                imageUrl:  './images/products/product7/INGOLF-bed_frame-1.jpg',
+                imageUrl2: './images/products/product7/INGOLF-bed_frame-2.jpg',
+                imageUrl3: './images/products/product7/INGOLF-bed_frame-3.jpg',
+                imageUrl4: './images/products/product7/INGOLF-bed_frame-4.jpg',
+                imageUrl5: './images/products/product7/INGOLF-bed_frame-5.jpg',
+                imageUrl6: './images/products/product7/INGOLF-bed_frame-6.jpg',
+                imageUrl7: './images/products/product7/INGOLF-bed_frame-7.jpg',
+                imageUrl8: './images/products/product7/INGOLF-bed_frame-8.jpg',
             },
             keyfeatures:
             {
@@ -473,11 +473,11 @@ myApp.controller('myAppController',function($scope, $localStorage){
                     'Mattress length':	'190 cm',
                     'Mattress width':	'135 cm',
                 },
-                'Pakage name': 'Bed frame HEMNES',
+                'Pakage name': 'Bed frame INGOLF',
                 'Pakages': '4',
                 'Package size & weight':
                 {
-                    'Bed frame HEMNES - Pakage 1':
+                    'Bed frame INGOLF - Pakage 1':
                     {
                         'Article no': '	102.638.02',
                         'Package': '1/2',
@@ -487,7 +487,7 @@ myApp.controller('myAppController',function($scope, $localStorage){
                         'Weight':	'23.40 kg',
                         'Volume per package':	'77.4 l',
                     },
-                    'Bed frame HEMNES - Pakage 2':
+                    'Bed frame INGOLF - Pakage 2':
                     {
                         'Article no': '	102.638.02',
                         'Package': '2/2',
@@ -541,9 +541,9 @@ myApp.controller('myAppController',function($scope, $localStorage){
                 Layer glued slats: Beech veneer, Birch veneer, Adhesive resin as coating<br>
                 Ribbon: 100% polyester, 100% polypropylene<br>
             `,
-            productDocument: './product_document/HEMNES-bed_frame.docx',
+            productDocument: './product_document/INGOLF-bed_frame.docx',
             category: 'Beds',
-            manufacture: 'HEMNES',
+            manufacture: 'INGOLF',
             model: '2016',
             quantity_of_inventory: 40,
             price: '175',
@@ -554,11 +554,11 @@ myApp.controller('myAppController',function($scope, $localStorage){
             name: 'Bed frame with 2 storage boxes',
             imageUrl:
             {
-                imageUrl:  './images/products/product8/SONGESAND-bed_frame_with_2_storage_boxes-1.jpg',
-                imageUrl2: './images/products/product8/SONGESAND-bed_frame_with_2_storage_boxes-2.jpg',
-                imageUrl3: './images/products/product8/SONGESAND-bed_frame_with_2_storage_boxes-3.jpg',
-                imageUrl4: './images/products/product8/SONGESAND-bed_frame_with_2_storage_boxes-4.jpg',
-                imageUrl5: './images/products/product8/SONGESAND-bed_frame_with_2_storage_boxes-5.jpg',
+                imageUrl:  './images/products/product8/KALLAX-bed_frame_with_2_storage_boxes-1.jpg',
+                imageUrl2: './images/products/product8/KALLAX-bed_frame_with_2_storage_boxes-2.jpg',
+                imageUrl3: './images/products/product8/KALLAX-bed_frame_with_2_storage_boxes-3.jpg',
+                imageUrl4: './images/products/product8/KALLAX-bed_frame_with_2_storage_boxes-4.jpg',
+                imageUrl5: './images/products/product8/KALLAX-bed_frame_with_2_storage_boxes-5.jpg',
                 imageUrl6: '',
                 imageUrl7: '',
                 imageUrl8: '',
@@ -585,7 +585,7 @@ myApp.controller('myAppController',function($scope, $localStorage){
                 'Pakages': '5',
                 'Package size & weight':
                 {
-                    'Bed storage box, set of 2 SONGESAND':
+                    'Bed storage box, set of 2 KALLAX':
                     {
                         'Article no':	'103.725.42',
                         'Package ':	'1',
@@ -645,7 +645,7 @@ myApp.controller('myAppController',function($scope, $localStorage){
             goodtoknow:
             `
                 The price for this combination includes SKORVA midbeam, but it is a separate product which you pick from its own shelf at the store. If you buy the bed via the website, SKORVA midbeam is included in the delivery.<br><br>
-                Combines with other furniture in the SONGESAND series.<br><br>
+                Combines with other furniture in the KALLAX series.<br><br>
             `,
             designer: 'IKEA of Sweden',
             materials: 
@@ -663,9 +663,9 @@ myApp.controller('myAppController',function($scope, $localStorage){
                 Layer glued slats: Beech veneer, Birch veneer, Adhesive resin as coating<br>
                 Ribbon: 100% polyester, 100% polypropylene<br><br>
             `,
-            productDocument: './product_document/SONGESAND-bed_frame_with_2_storage_boxes.docx',
+            productDocument: './product_document/KALLAX-bed_frame_with_2_storage_boxes.docx',
             category: 'Beds',
-            manufacture: 'SONGESAND',
+            manufacture: 'KALLAX',
             model: '2017',
             quantity_of_inventory: 30,
             price: '195',
@@ -673,15 +673,15 @@ myApp.controller('myAppController',function($scope, $localStorage){
         },
         {
             id: 9,
-            name: 'Wall clock',
+            name: 'Shelf with drawer',
             imageUrl:
             {
-                imageUrl:  './images/products/product9/STOLPA-wall_clock-1.jpg',
-                imageUrl2: './images/products/product9/STOLPA-wall_clock-2.jpg',
-                imageUrl3: './images/products/product9/STOLPA-wall_clock-3.jpg',
-                imageUrl4: './images/products/product9/STOLPA-wall_clock-4.jpg',
-                imageUrl5: './images/products/product9/STOLPA-wall_clock-5.jpg',
-                imageUrl6: './images/products/product9/STOLPA-wall_clock-6.jpg',
+                imageUrl:  './images/products/product9/INGOLF-shelf_with_drawer-1.jpg',
+                imageUrl2: './images/products/product9/INGOLF-shelf_with_drawer-2.jpg',
+                imageUrl3: './images/products/product9/INGOLF-shelf_with_drawer-3.jpg',
+                imageUrl4: '',
+                imageUrl5: '',
+                imageUrl6: '',
                 imageUrl7: '',
                 imageUrl8: '',
             },
@@ -689,50 +689,70 @@ myApp.controller('myAppController',function($scope, $localStorage){
             {
                 'Information of keyfeatures': 
                 `
-                Highly accurate at keeping time as it is fitted with a quartz movement.
+                    Drawer stops prevent the drawers from being pulled out too far.
                 `,
                 'Assembled size': 
                 {
-                    'Depth':	'5 cm',
-                    'Diameter':	'32 cm',
+                    'Width': '119 cm',
+                    'Depth': '29 cm',
+                    'Height': '44 cm',
+                    'Max. load/shelf': '20 kg',
                 },
-                'Pakage name': 'Wall clock STOLPA',
-                'Pakages': '1',
+                'Pakage name': 'Shelf with drawers INGOLF',
+                'Pakages': '2',
                 'Package size & weight':
                 {
-                    'Pakage 1':
+                    'Shelf with drawers EKBY ALEX':
                     {
-                        'Article no':	'804.003.82',
+                        'Article no':	'201.928.28',
                         'Package ':	'1',
-                        'Length':	'33 cm',
-                        'Width':	'33 cm',
-                        'Height':	'6 cm',
-                        'Weight':	'0.98 kg',
-                        'Volume per package':	'6.2 l',
+                        'Length':	'121 cm',
+                        'Width':	'30 cm',
+                        'Height':	'7 cm',
+                        'Weight':	'12.37 kg',
+                        'Volume per package':	'23.9 l',
+                    },
+                    'Bracket EKBY LERBERG':
+                    {
+                        'Article no':	'501.687.23',
+                        'Package ':	'2',
+                        'Length':	'28 cm',
+                        'Width':	'19 cm',
+                        'Height':	'2 cm',
+                        'Weight':	'0.33 kg',
+                        'Volume per package':	'1.3 l',
                     },
                 }
             },
             careinstructions: 
             `
-                Clean with a duster.
+                Wipe clean with a cloth dampened in a mild cleaner.<br><br>
+                Wipe dry with a clean cloth.<br><br>
             `,
             goodtoknow:
             `
-                We recommend using alkaline batteries in the clock.<br><br>
-
+                Mount the brackets with a maximum distance of 80 cm between them to ensure the wall shelf is as stable as possible.<br><br>
+                Different wall materials require different types of fixing devices. Use fixing devices suitable for the walls in your home, sold separately.<br><br>
+                If you are uncertain about what type of fixing devices to use, please contact your local hardware store.<br><br>
             `,
-            designer: 'Henrik Preutz',
+            designer: 'Jon Karlsson/Johanna Asshoff',
             materials: 
             `
-                ABS plastic
+                <b>Bracket</b><br>
+                Steel, Epoxy/polyester powder coating<br><br>
+                <b>Shelf with drawers</b><br>
+                Basematerial/ Drawer front: Particleboard, Acrylic paint, ., Melamine foil, ABS plastic<br>
+                Back panel: Fibreboard<br>
+                Drawer back/ Drawer side: Particleboard, Foil<br>
+                Drawer bottom: Fibreboard, Acrylic paint<br>
             `,
-            productDocument: './product_document/STOLPA-wall_clock.docx',
-            category: 'Clock',
-            manufacture: 'STOLPA',
+            productDocument: './product_document/INGOLF-shelf_with_drawer.docx',
+            category: 'Shelf',
+            manufacture: 'INGOLF',
             model: '2018',
-            quantity_of_inventory: 60,
-            price: '25',
-            sales: 30,
+            quantity_of_inventory: 30,
+            price: '39',
+            sales: 20,
         },
         {
             id: 10,
@@ -879,13 +899,13 @@ myApp.controller('myAppController',function($scope, $localStorage){
             name: 'Extendable table',
             imageUrl:
             {
-                imageUrl:  './images/products/product12/STOLPA-extendable-table-1.jpg',
-                imageUrl2: './images/products/product12/STOLPA-extendable-table-2.jpg',
-                imageUrl3: './images/products/product12/STOLPA-extendable-table-3.jpg',
-                imageUrl4: './images/products/product12/STOLPA-extendable-table-4.jpg',
-                imageUrl5: './images/products/product12/STOLPA-extendable-table-5.jpg',
-                imageUrl6: './images/products/product12/STOLPA-extendable-table-6.jpg',
-                imageUrl7: './images/products/product12/STOLPA-extendable-table-7.jpg',
+                imageUrl:  './images/products/product12/KALLAX-extendable-table-1.jpg',
+                imageUrl2: './images/products/product12/KALLAX-extendable-table-2.jpg',
+                imageUrl3: './images/products/product12/KALLAX-extendable-table-3.jpg',
+                imageUrl4: './images/products/product12/KALLAX-extendable-table-4.jpg',
+                imageUrl5: './images/products/product12/KALLAX-extendable-table-5.jpg',
+                imageUrl6: './images/products/product12/KALLAX-extendable-table-6.jpg',
+                imageUrl7: './images/products/product12/KALLAX-extendable-table-7.jpg',
                 imageUrl8: '',
             },
             keyfeatures:
@@ -902,7 +922,7 @@ myApp.controller('myAppController',function($scope, $localStorage){
                     'Width': '84 cm',
                     'Height': '74 cm',
                 },
-                'Pakage name': 'Extendable table STOLPA',
+                'Pakage name': 'Extendable table KALLAX',
                 'Pakages': '1',
                 'Package size & weight':
                 {
@@ -946,9 +966,9 @@ myApp.controller('myAppController',function($scope, $localStorage){
                 Leg: Particleboard, Oak veneer, Tinted clear acrylic lacquer<br><br>
                 Rail/ Extension rail: Solid wood<br><br>
             `,
-            productDocument: './product_document/STOLPA-extendable_table.docx',
+            productDocument: './product_document/KALLAX-extendable_table.docx',
             category: 'Tables',
-            manufacture: 'STOLPA',
+            manufacture: 'KALLAX',
             model: '2017',
             quantity_of_inventory: 22,
             price: '150',
@@ -959,7 +979,7 @@ myApp.controller('myAppController',function($scope, $localStorage){
             name: 'Shelf',
             imageUrl:
             {
-                imageUrl:  './images/products/product13/SONGESAND-shelf.jpg',
+                imageUrl:  './images/products/product13/BILLY-shelf.jpg',
                 imageUrl2: '',
                 imageUrl3: '',
                 imageUrl4: '',
@@ -981,11 +1001,11 @@ myApp.controller('myAppController',function($scope, $localStorage){
                     'Thickness': '24.5 cm',
                     'Max. load': '10 kg',
                 },
-                'Pakage name': 'Shelf SONGESAND',
+                'Pakage name': 'Shelf BILLY',
                 'Pakages': '2',
                 'Package size & weight':
                 {
-                    'Shelf SONGESAND':
+                    'Shelf BILLY':
                     {
                         'Article no':	'501.787.03',
                         'Package ':	'1',
@@ -995,7 +1015,7 @@ myApp.controller('myAppController',function($scope, $localStorage){
                         'Weight':	'1.40 kg',
                         'Volume per package':	'2.3 l',
                     },
-                    'Bracket SONGESAND':
+                    'Bracket BILLY':
                     {
                         'Article no':	'766.960.09',
                         'Package ':	'2',
@@ -1025,9 +1045,9 @@ myApp.controller('myAppController',function($scope, $localStorage){
                 <b>Shelf</b><br>
                 Particleboard, Foil<br><br>
             `,
-            productDocument: './product_document/SONGESAND-shelf.docx',
+            productDocument: './product_document/BILLY-shelf.docx',
             category: 'Shelf',
-            manufacture: 'SONGESAND',
+            manufacture: 'BILLY',
             model: '2016',
             quantity_of_inventory: 0,
             price: '5.90',
@@ -1038,11 +1058,11 @@ myApp.controller('myAppController',function($scope, $localStorage){
             name: 'Bookcase',
             imageUrl:
             {
-                imageUrl:  './images/products/product14/HEMNES-bookcase-1.jpg',
-                imageUrl2: './images/products/product14/HEMNES-bookcase-2.jpg',
-                imageUrl3: './images/products/product14/HEMNES-bookcase-3.jpg',
-                imageUrl4: './images/products/product14/HEMNES-bookcase-4.jpg',
-                imageUrl5: './images/products/product14/HEMNES-bookcase-5.jpg',
+                imageUrl:  './images/products/product14/KALLAX-bookcase-1.jpg',
+                imageUrl2: './images/products/product14/KALLAX-bookcase-2.jpg',
+                imageUrl3: './images/products/product14/KALLAX-bookcase-3.jpg',
+                imageUrl4: './images/products/product14/KALLAX-bookcase-4.jpg',
+                imageUrl5: './images/products/product14/KALLAX-bookcase-5.jpg',
                 imageUrl6: '',
                 imageUrl7: '',
                 imageUrl8: '',
@@ -1060,7 +1080,7 @@ myApp.controller('myAppController',function($scope, $localStorage){
                     'Height': '214 cm',
                     'Max. load/shelf': '35 kg',
                 },
-                'Pakage name': 'Bookcase HEMNES',
+                'Pakage name': 'Bookcase KALLAX',
                 'Pakages': '2',
                 'Package size & weight':
                 {
@@ -1096,7 +1116,7 @@ myApp.controller('myAppController',function($scope, $localStorage){
                 This furniture must be fixed to the wall with the enclosed wall fastener.<br><br>
                 Different wall materials require different types of fixing devices. Use fixing devices suitable for the walls in your home, sold separately.<br><br>
                 Two people are required to do the assembly.<br><br>
-                May be completed with HEMNES doors 44x198 cm.<br><br>
+                May be completed with KALLAX doors 44x198 cm.<br><br>
             `,
             designer: 'Carina Bengs',
             materials: 
@@ -1107,9 +1127,9 @@ myApp.controller('myAppController',function($scope, $localStorage){
                 Back/ Other parts: Fibreboard, Polyester paint<br><br>
                 Bottom panel: Particleboard, Foil, Polyester paint<br><br>
             `,
-            productDocument: './product_document/HEMNES-Bookcase.docx',
+            productDocument: './product_document/KALLAX-Bookcase.docx',
             category: 'Bookcase',
-            manufacture: 'HEMNES',
+            manufacture: 'KALLAX',
             model: '2017',
             quantity_of_inventory: 5,
             price: '170',
@@ -1180,6 +1200,384 @@ myApp.controller('myAppController',function($scope, $localStorage){
             quantity_of_inventory: 50,
             price: '2',
             sales: 40,
+        },
+        {
+            id: 16,
+            name: 'Bookcase',
+            imageUrl:
+            {
+                imageUrl:  './images/products/product16/INGOLF-bookcase-1.jpg',
+                imageUrl2: './images/products/product16/INGOLF-bookcase-2.jpg',
+                imageUrl3: './images/products/product16/INGOLF-bookcase-3.jpg',
+                imageUrl4: '',
+                imageUrl5: '',
+                imageUrl6: '',
+                imageUrl7: '',
+                imageUrl8: '',
+            },
+            keyfeatures:
+            {
+                'Information of keyfeatures': 
+                `
+                    Adjustable shelves; adapt space between shelves according to your needs.
+                `,
+                'Assembled size': 
+                {
+                    'Width': '80 cm',
+                    'Depth': '28 cm',
+                    'Height': '106 cm',
+                    'Max. load/shelf': '30 kg',
+                },
+                'Pakage name': 'Bookcase INGOLF',
+                'Pakages': '1',
+                'Package size & weight':
+                {
+                    'Package 1':
+                    {
+                        'Article no':	'702.912.32',
+                        'Package ':	'1',
+                        'Length':	'8 cm',
+                        'Width':	'7 cm',
+                        'Height':	'2 cm',
+                        'Weight':	'0.04 kg',
+                        'Volume per package':	'0.1 l',
+                    }
+                }
+            },
+            careinstructions:
+            `
+                <b>Wood</b>
+                Wipe clean with a cloth dampened in a mild cleaner.<br><br>
+                Wipe dry with a clean cloth.<br><br>
+            `,
+            goodtoknow:
+            `
+                This furniture must be fixed to the wall with the enclosed wall fastener.<br><br>
+                Different wall materials require different types of fixing devices. Use fixing devices suitable for the walls in your home, sold separately.<br><br>
+                2 shelves included.<br><br>
+                May be completed with doors; available in different colours and designs.<br><br>
+            `,
+            designer: 'Gillis Lundgren',
+            materials: 
+            `
+                Basematerial: Particleboard, Oak veneer, Paper, Stain, Clear acrylic lacquer<br><br>
+                Back: Fibreboard, Foil<br><br>
+            `,
+            productDocument: './product_document/INGOLF-bookcase.docx',
+            category: 'Bookcase',
+            manufacture: 'INGOLF',
+            model: '2016',
+            quantity_of_inventory: 5,
+            price: '45',
+            sales: 10,
+        },
+        {
+            id: 17,
+            name: 'Table lamp',
+            imageUrl:
+            {
+                imageUrl:  './images/products/product17/FOTO-table_lamp-1.jpg',
+                imageUrl2: './images/products/product17/FOTO-table_lamp-2.jpg',
+                imageUrl3: './images/products/product17/FOTO-table_lamp-3.jpg',
+                imageUrl4: './images/products/product17/FOTO-table_lamp-4.jpg',
+                imageUrl5: './images/products/product17/FOTO-table_lamp-5.jpg',
+                imageUrl6: '',
+                imageUrl7: '',
+                imageUrl8: '',
+            },
+            keyfeatures:
+            {
+                'Information of keyfeatures': 
+                `
+                    Small and easy to place anywhere you want to bring some cosiness and mood light into your home.
+                `,
+                'Assembled size': 
+                {
+                    'Max.': '6.0 W',
+                    'Shade width': '10 cm',
+                    'Height': '25 cm',
+                    'Base diameter': '15 cm',
+                    'Cord length': '2.0 m',
+                },
+                'Pakage name': 'Table lamp FOTO',
+                'Pakages': '1',
+                'Package size & weight':
+                {
+                    'Package 1':
+                    {
+                        'Article no':	'203.238.91',
+                        'Package ':	'1',
+                        'Length':	'28 cm',
+                        'Width':	'17 cm',
+                        'Height':	'12 cm',
+                        'Weight':	'0.91 kg',
+                        'Volume per package':	'5.2 l',
+                    }
+                }
+            },
+            careinstructions:
+            `
+                Dust the lamp with a duster.
+            `,
+            goodtoknow:
+            `
+                Can only be used with light bulbs that are dimmable.<br><br>
+                This product bears the CE mark.<br><br>
+            `,
+            designer: 'Stina Lanneskog',
+            materials: 
+            `
+                Base: Steel, Powder coating<br><br>
+                Shade holder: Stainless steel, Nickel-plated, Acrylic coating<br><br>
+                Knob: Steel, Nickel-plated, Acrylic coating<br><br>
+                Shade: Glass<br><br>
+            `,
+            productDocument: './product_document/FOTO-table_lamp.docx',
+            category: 'Lamp',
+            manufacture: 'FOTO',
+            model: '2018',
+            quantity_of_inventory: 45,
+            price: '15',
+            sales: 20,
+        },
+        {
+            id: 18,
+            name: 'Wall lamp',
+            imageUrl:
+            {
+                imageUrl:  './images/products/product18/BILLY-wall_lamp-1.jpg',
+                imageUrl2: './images/products/product18/BILLY-wall_lamp-2.jpg',
+                imageUrl3: './images/products/product18/BILLY-wall_lamp-3.jpg',
+                imageUrl4: './images/products/product18/BILLY-wall_lamp-4.jpg',
+                imageUrl5: '',
+                imageUrl6: '',
+                imageUrl7: '',
+                imageUrl8: '',
+            },
+            keyfeatures:
+            {
+                'Information of keyfeatures': 
+                `
+                    Gives a diffused light; good for spreading light into larger areas of a bathroom.
+                `,
+                'Assembled size': 
+                {
+                    'Max.': '7 W',
+                    'Height': '20 cm',
+                    'Base diameter': '12 cm',
+                    'Shade diameter': '13 cm',
+                },
+                'Pakage name': 'Wall lamp BILLY',
+                'Pakages': '1',
+                'Package size & weight':
+                {
+                    'Package 1':
+                    {
+                        'Article no':	'202.387.51',
+                        'Package ':	'1',
+                        'Length':	'27 cm',
+                        'Width':	'17 cm',
+                        'Height':	'16 cm',
+                        'Weight':	'1.13 kg',
+                        'Volume per package':	'7.1 l',
+                    }
+                }
+            },
+            careinstructions:
+            `
+                Wipe clean with a cloth dampened in a mild cleaner.
+            `,
+            goodtoknow:
+            `
+                Wired-in installation.<br><br>
+                Use an opal light bulb if you have an ordinary lamp shade or lamp and want an even, diffused distribution of light.<br><br>
+                Use a clear light bulb if you have a lamp shade or lamp with a perforated or cut-out pattern or other airy, open design and want the pattern to cast effects on the wall and ceiling.<br><br>
+                Tested and approved for bathroom use.<br><br>
+                Approved for IP44.<br><br>
+                May be completed with other lamps in the same series.<br><br>
+                This product bears the CE mark.<br><br>
+            `,
+            designer: 'P Amsell/B Berlin',
+            materials: 
+            `
+                Junction box: Polyester<br><br>
+                Cover: ABS plastic<br><br>
+                Shade: Glass<br><br>
+                Base: Stoneware, Glaze<br><br>
+            `,
+            productDocument: './product_document/BILLY-wall_lamp.docx',
+            category: 'Lamp',
+            manufacture: 'BILLY',
+            model: '2017',
+            quantity_of_inventory: 23,
+            price: '20',
+            sales: 10,
+        },
+        {
+            id: 19,
+            name: 'Coffee table',
+            imageUrl:
+            {
+                imageUrl:  './images/products/product19/FOTO-coffee_table-1.jpg',
+                imageUrl2: './images/products/product19/FOTO-coffee_table-2.jpg',
+                imageUrl3: './images/products/product19/FOTO-coffee_table-3.jpg',
+                imageUrl4: '',
+                imageUrl5: '',
+                imageUrl6: '',
+                imageUrl7: '',
+                imageUrl8: '',
+            },
+            keyfeatures:
+            {
+                'Information of keyfeatures': 
+                `
+                    Solid wood has a natural feel.
+                `,
+                'Assembled size': 
+                {
+                    'Length': '118 cm',
+                    'Width': '75 cm',
+                    'Height': '46 cm',
+                },
+                'Pakage name': 'Coffee table FOTO',
+                'Pakages': '1',
+                'Package size & weight':
+                {
+                    'Package 1':
+                    {
+                        'Article no':	'801.762.84',
+                        'Package ':	'1',
+                        'Length':	'122 cm',
+                        'Width':	'78 cm',
+                        'Height':	'7 cm',
+                        'Weight':	'21.50 kg',
+                        'Volume per package':	'65.9 l',
+                    }
+                }
+            },
+            careinstructions:
+            `
+                Wipe clean with a damp cloth.<br><br>
+                Wipe clean with a dry cloth.<br><br>
+            `,
+            goodtoknow:
+            `
+                Combines with other furniture in the HEMNES series.<br><br>
+                Please check with local authorities to make sure that the product complies with any specific requirements for business use.<br><br>
+            `,
+            designer: 'Carina Bengs',
+            materials: 
+            `
+                Solid pine, Stain, Clear acrylic lacquer
+            `,
+            productDocument: './product_document/FOTO-coffee_table.docx',
+            category: 'Tables',
+            manufacture: 'FOTO',
+            model: '2015',
+            quantity_of_inventory: 24,
+            price:'95',
+            sales: 8,
+        },
+        {
+            id: 20,
+            name: 'Armchair',
+            imageUrl:
+            {
+                imageUrl:  './images/products/product20/BILLY-Armchair-1.jpg',
+                imageUrl2: './images/products/product20/BILLY-Armchair-2.jpg',
+                imageUrl3: './images/products/product20/BILLY-Armchair-3.jpg',
+                imageUrl4: './images/products/product20/BILLY-Armchair-4.jpg',
+                imageUrl5: './images/products/product20/BILLY-Armchair-5.jpg',
+                imageUrl6: './images/products/product20/BILLY-Armchair-6.jpg',
+                imageUrl7: '',
+                imageUrl8: '',
+            },
+            keyfeatures:
+            {
+                'Information of keyfeatures': 
+                `
+                    Layer-glued bent birch frame gives comfortable resilience.
+                `,
+                'Assembled size': 
+                {
+                    'Width': '68 cm',
+                    'Depth': '82 cm',
+                    'Height': '100 cm',
+                    'Seat width': '56 cm',
+                    'Seat depth': '50 cm',
+                    'Seat height': '42 cm',
+
+                },
+                'Pakage name': 'Armchair BILLY',
+                'Pakages': '2',
+                'Package size & weight':
+                {
+                    'Armchair cushion':
+                    {
+                        'Article no':	'803.625.11',
+                        'Package ':	'1',
+                        'Length':	'70 cm',
+                        'Width':	'58 cm',
+                        'Height':	'15 cm',
+                        'Weight':	'2.98 kg',
+                        'Volume per package':	'60.4 l',
+                    },
+                    'Armchair frame':
+                    {
+                        'Article no':	'813.058.07',
+                        'Package ':	'1',
+                        'Length':	'73 cm',
+                        'Width':	'67 cm',
+                        'Height':	'7 cm',
+                        'Weight':	'8.30 kg',
+                        'Volume per package':	'34.2 l',
+                    }
+                }
+            },
+            careinstructions:
+            `
+                <b>Frame</b><br>
+                Wipe clean with a cloth dampened in a mild cleaner.<br>
+                
+                Wipe dry with a clean cloth.<br><br>
+                
+                <b>Removable cover</b><br>
+                Machine wash, max 40°C, normal process.<br>
+                
+                To be washed separately.<br>
+                
+                Do not bleach.<br>
+                
+                Do not tumble dry.<br>
+                
+                Iron, max 150°C.<br>
+                
+                Professional dry cleaning in tetrachloroethene and hydrocarbons, normal process.<br>
+            `,
+            goodtoknow:
+            `
+            `,
+            designer: 'Noboru Nakamura',
+            materials: 
+            `
+               <b>Armchair cushion</b><br>
+                Total composition: 55% cotton, 25% polyester, 12% viscose/rayon, 8% linen<br>
+                Seat/ Back: Polyurethane foam 35 kg/cu.m., Polyester wadding, 100% polypropylene<br>
+                Head rest: Polyester wadding, 100% polypropylene, Polyurethane foam 25 kg/cu.m.<br>
+                Hook and loop fastener, soft part: 100% nylon<br>
+                Zip: Polyamide plastic<br>
+                Fire-retarding interliner: 100% cotton<br><br>
+                <b>Armchair frame</b><br>
+                Supporting fabric: 100% polypropylene<br>
+                Frame: Moulded layer-glued wood veneer with surface of, Birch veneer, Clear acrylic lacquer<br>
+            `,
+            productDocument: './product_document/BILLY-armchair.docx',
+            category: 'Chairs',
+            manufacture: 'BILLY',
+            model: '2017',
+            quantity_of_inventory: 20,
+            price:'95',
+            sales: 7,
         },
     ];
 
