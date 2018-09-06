@@ -29,11 +29,7 @@ p {
 {
     font-weight: bold;
 }
-.blink_me {
-    animation: blinker 1s linear infinite;
-	color: #630;
-  }
-  
+
   @keyframes blinker {
     50% {
       opacity: 0;

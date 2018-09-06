@@ -1199,7 +1199,7 @@ myApp.controller('myAppController',function($scope, $localStorage){
             model: '2015',
             quantity_of_inventory: 50,
             price: '2',
-            sales: 40,
+            sales: 15,
         },
         {
             id: 16,
@@ -1902,23 +1902,5 @@ myApp.controller('myAppController',function($scope, $localStorage){
                 $localStorage.specificStoraged = $scope.data[i];
             }
         }
-    }
-
-
-
-
-    
-    // // // // // FUNCTION TEST ZONE
-    $scope.clickForDemoBind = function()
-    {
-        bestsellerFunction();
-    }
-    $scope.clickForTest = function()
-    {
-        console.log($scope.compareData.length);
-    }
-    $scope.clickForReset = function()
-    {
-        $localStorage.$reset();
     }
 });

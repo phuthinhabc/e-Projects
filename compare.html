@@ -96,6 +96,12 @@
                   <p id="my-is-deco" ng-if='item.quantity_of_inventory != 0'>In stock</p>
               </td>
             </tr>
+            <tr>
+              <td>Full document</td>
+              <td ng-repeat="item in compareData">
+                <a href="{{item.productDocument}}">Download</a>
+              </td>
+            </tr>
         </tbody>
     </table>
     <!-- Main zone -->
