@@ -25,6 +25,7 @@ function check(){
     }
     else{
         alert("Wrong captcha");
+		return false;
     }
 }	
 

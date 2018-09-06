@@ -65,7 +65,7 @@
       <div class="row py-2">
         <!-- Form zone -->
         <div class="col-md-6">
-          <form onSubmit="return check()">
+          <form  onSubmit="return check()">
             <label for="fname">First Name ( Your name shouldn't contain number or special character )</label>
             <input type="text" id="fname" name="firstname" placeholder="Enter your name.." autofocus pattern="[a-zA-Z ]{3,30}" >
   
@@ -88,7 +88,7 @@
   			<input type="text" id="captcha" disabled/><br/><br/>
 			<input type="text" id="inputText"/><br/><br/>
 	
-	       <input id="my-refresh-btn" type="button" value="Refresh" onClick="generateCaptcha()" class="btn">
+	       <input name="Reset" type="button" class="btn" id="my-refresh-btn" onClick="generateCaptcha()"  value="Refresh">
           
         
             <input id="my-submit-btn" type="submit" value="Submit" class="btn" >
