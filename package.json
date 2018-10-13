@@ -1,0 +1,26 @@
+{
+  "name": "e-project",
+  "version": "1.0.0",
+  "description": "Furniture sale web",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phuthinhabc/e-Projects.git"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "author": "phuthinhabc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phuthinhabc/e-Projects/issues"
+  },
+  "homepage": "https://github.com/phuthinhabc/e-Projects#readme",
+  "dependencies": {
+    "http-server": "^0.11.1",
+    "ngstorage": "^0.3.11"
+  }
+}
