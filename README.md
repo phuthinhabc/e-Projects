@@ -19,7 +19,7 @@ or
 $ yarn install
 ```
 
-- Serve webpage
+- Serve webpage at port **8080**
 ```bash
 $ npm run start
 ```
