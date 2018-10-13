@@ -1,0 +1,153 @@
+.my-navbar_item-style
+{
+    font-weight: bold;
+}
+
+.my-fixed-height-overlay
+{
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+@media (min-width: 576px) 
+{
+    .my-fixed-height, .my-fixed-height-overlay
+    {
+      height: 720px;
+      margin-bottom: 15px;
+    }
+}
+
+@media (min-width: 576px) 
+{
+    .my-fixed-height, .my-fixed-height-overlay
+    {
+        height: 720px;
+        margin-bottom: 15px;
+    }
+}
+  
+@media (min-width: 768px) 
+{
+    .my-fixed-height, .my-fixed-height-overlay
+    {
+        height: 390px;
+        margin-bottom: 5px;
+    }
+    #my-product-header
+    {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 992px) 
+{
+    .my-fixed-height, .my-fixed-height-overlay
+    {
+        height: 450px;
+        margin-bottom: 20px;
+    }
+    #my-product-header
+    {
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 1200px) 
+{
+    .my-fixed-height, .my-fixed-height-overlay
+    {
+        height: 500px;
+        margin-bottom: 20px;
+    }
+    #my-product-header
+    {
+        font-size: 28px;
+    }
+}
+
+.my-product
+{
+    transition: all linear 0.3s;
+    opacity: 1;
+}
+.my-product-hover
+{
+    transition: all linear 0.3s;
+    opacity: 0.05;
+}
+.my-overlay-hover
+{
+    transition: all linear 0.3s;
+    opacity: 1;
+}
+.my-overlay
+{
+    transition: all linear 0.3s;
+    opacity: 0;
+}
+#my-counter-compare
+{
+    border-radius: 25px;
+    background: orange;
+    margin-top: -20px;
+    margin-right: -20px;
+    width: 25px;
+    height: 25px;
+}
+.my-deco-none
+{
+    color:#000000 !important;
+    text-decoration:none;
+}
+.my-button-overlay, .my-compare-btn
+{
+    color: #fff;
+    background-color: #817C7A;
+    border-color: #817C7A;
+}
+.my-button-overlay:hover, .my-compare-btn:hover
+{
+    color: #fff;
+    background-color: #5F5C5A;
+    border-color: #5F5C5A;
+}
+.my-button-overlay:focus, .my-compare-btn:focus
+{
+    box-shadow: 0 0 0 0.2rem rgba(131, 125, 123, 0.5);
+}
+.my-button-overlay:active,
+{
+    transform: scale(0.95);
+}
+.my-compare-btn:disabled
+{
+    color: #fff;
+    background-color: #817C7A;
+    border-color: #817C7A;
+}
+.my-btn-filter
+{
+    box-shadow: none;
+    background: #9B9B9B;
+    color: white;
+}
+.my-btn-filter:hover, .my-btn-filter:focus
+{
+    box-shadow: none;
+    color:white;
+}
+.my-modal-delete-btn:hover
+{
+    background: #C2C2C2;
+    transform: scale(1.2);
+    box-shadow: none;
+    outline: none;
+}
+#my-product-header
+{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

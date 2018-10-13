@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- My Compare CSS -->
+    <link rel="stylesheet" href="CSS/compare_style.css">
+
+    <!-- Angular JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular-animate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.7.2/angular-sanitize.js"></script>
+    <script src="./node_modules/ngstorage/ngStorage.min.js"></script>
+
+    <!-- My JavaScript -->
+    <script src="JS/product_js.js"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <title>Compare</title>
+    
+  </head>
+  <body class="" ng-app="myApp" ng-controller="myAppController">
+
+    <!-- Logo zone -->
+    <nav class="container-fluid navbar navbar-light bg-light d-block text-center">
+      <a class="navbar-brand" href="#">
+        <h2><i class="fas fa-shopping-cart"></i><p><i>The DF Store</i></p></h2>
+      </a>
+    </nav>
+    <!-- Logo zone -->
+
+    <!-- Navbar zone -->
+    <nav class="container-fluid navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler m-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto my-navbar_item-style">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./product.html">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+    <!-- Navbar zone -->
+
+
+    <div class="container">
+
+    <!-- Main zone -->
+    <table class="table">
+        <tbody>
+            <tr>
+                <td>Name</td>
+                <td ng-repeat='item in compareData'>{{item.name}}</td>
+            </tr>
+            <tr>
+                <td>Image</td>
+                <td ng-repeat='item in compareData'><img ng-src="{{item['imageUrl']['imageUrl']}}" class="rounded img-thumbnail" alt="Product picture"></td>
+            </tr>
+            <tr>
+                <td>Category</td>
+                <td ng-repeat='item in compareData'>{{item.category}}</td>
+            </tr>
+            <tr>
+                <td>Manufacture</td>
+                <td ng-repeat='item in compareData'>{{item.manufacture}}</td>
+            </tr>
+            <tr>
+                <td>Model</td>
+                <td ng-repeat='item in compareData'>{{item.model}}</td>
+            </tr>
+            <tr>
+                <td>Price</td>
+                <td ng-repeat='item in compareData'>{{item.price}}</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td ng-repeat='item in compareData'>
+                  <p id="my-oos-deco" ng-if='item.quantity_of_inventory == 0'>Out of stock</p>
+                  <p id="my-is-deco" ng-if='item.quantity_of_inventory != 0'>In stock</p>
+              </td>
+            </tr>
+            <tr>
+              <td>Full document</td>
+              <td ng-repeat="item in compareData">
+                <a href="{{item.productDocument}}">Download</a>
+              </td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- Main zone -->
+      
+    <!-- Footer zone -->
+    <div class="container">
+      <hr>
+      <div class="row">
+        <div class="col-md-7">
+          <p><i>Address: 590 Cach Mang Thang 8 - District 3 - Ho Chi Minh - Vietnam</i></p>
+          <p><i>Tel: +843829302</i></p>
+        </div>
+        <div class="col-md-5 display-4">
+          <ul class="text-right list-inline">
+            <li class="list-inline-item">
+              <a class='my-deco-none' href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a class='my-deco-none' href="https://www.pinterest.com/"><i class="fab fa-pinterest"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a class='my-deco-none' href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+    <!-- Footer zone -->
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>

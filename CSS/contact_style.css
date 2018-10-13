@@ -1,0 +1,67 @@
+input[type=text], input[type=email], select, textarea  {
+ 
+    width: 100%;
+ 
+    padding: 12px;
+ 
+    border: 1px solid #ccc;
+ 
+    border-radius: 4px;
+ 
+    box-sizing: border-box;
+ 
+    margin-top: 6px;
+ 
+    margin-bottom: 16px;
+ 
+    resize: vertical;
+} 
+
+p {
+	color:black;
+}
+.my-deco-none
+{
+    color:#000000 !important;
+    text-decoration:none;
+}
+.my-navbar_item-style
+{
+    font-weight: bold;
+}
+
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+  h2 {
+      color: black;
+  }
+
+  div {
+      color: yellowgreen;
+  }
+option {
+    color:red;
+}
+label
+{
+    color: black;
+}
+#my-refresh-btn, #my-submit-btn
+{
+    background: #817C7A;
+    color: white;
+    width: 150px;
+    border-radius: 0;
+}
+#my-refresh-btn:hover, #my-submit-btn:hover
+{
+    background: #5F5C5A;
+}
+#my-refresh-btn:active, #my-submit-btn:active
+{
+    transform: scale(0.97);
+}
+
